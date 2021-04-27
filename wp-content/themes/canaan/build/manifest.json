@@ -1,0 +1,10 @@
+{
+  "wp-content/themes/canaan/static/js/main.js": {
+    "file": "assets/main.dd574ae1.js",
+    "src": "wp-content/themes/canaan/static/js/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main.07d4f36c.css"
+    ]
+  }
+}

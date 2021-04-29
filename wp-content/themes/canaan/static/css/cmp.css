@@ -1,0 +1,41 @@
+
+.btn{
+    padding: 2px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 27px;
+    border-radius: 6px;
+    height: 59px;
+    width: 223px;
+}
+
+.topbar_right_icon{
+    height: 100px;
+    width: 100px;
+}
+.bbtn{
+    color: blue;
+}
+.bbtn:focus{
+    color: chartreuse;
+}
+
+/* .landingPageSmallDivider{
+    width: 150px;
+    height: 5px;
+    margin: 3px;
+    background-color: deeppink;
+} */
+
+/* .full_width{
+    width: 1920px;
+} */
+
+
+
+/* .nav_bar{
+    display: flex;
+    justify-content: space-evenly;
+
+} */
+

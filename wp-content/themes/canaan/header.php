@@ -1,7 +1,13 @@
 <?php
 if (!defined('ABSPATH')) {
     die();
-}
+};
+
+global $post;
+$prefix = 'page-home';
+$mainObj = new canaan_post($post);
+
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -11,7 +17,7 @@ if (!defined('ABSPATH')) {
     <?php // get_template_part('parts/favicon'); 
     ?>
     <?php get_template_part('parts/ga-tracking'); ?>
-    <?php // get_template_part('parts/font-loader');
+    <?php get_template_part('parts/font-loader');
     ?>
     <script>
         var __mainData = {
@@ -41,5 +47,56 @@ if (!defined('ABSPATH')) {
     <div id="app">
         <div class="sitcky-footer">
             <header>
+                <!-- <nav class="nav_bar w-full h-24 bg-red-300 flex "> -->
+                <nav class="w-full p-8 h-24 bg-red-300 flex justify-evenly ">
+
+                    <!-- <div class="topbar_right_icon  p-3"> -->
+                    <div class="topbar_right_icon ">
+                        <?php
+                        $imgae_id = carbon_get_the_post_meta($prefix . 'image');
+                        echo wp_get_attachment_image($imgae_id);
+                        ?>
+                    </div>
+
+                    <div class="topBarMiddle  justify-between">
+                        <?php
+                            $header_links =[
+                                ['href'=>'#', 'text'=>' ראשי'],
+                                ['href'=>'#', 'text'=>' מה במוצר'],
+                                ['href'=>'#', 'text'=>' מרכזי ייעוץ'],
+                                ['href'=>'#', 'text'=>' מעסיקים'],
+                                ['href'=>'#', 'text'=>' יצירת קשר'],
+                                ['href'=>'#', 'text'=>' תמונה'],
+                            ];
+                            foreach ($header_links as $key => $value) {
+                                # code...
+                                echo '<a class="px-4" href="'.$value['href'].'" >'.$value['text'].'</a>';
+                            }
+                        ?>
+                        <!-- <button class="bbtn">ראשי</button>
+                        <button>מה במוצר</button>
+                        <button>מרכזי ייעוץ</button>
+                        <button>צעסיקים</button>
+                        <button>יצירת קשר</button>
+                        <button>תמונה</button> -->
+
+                    </div>
+
+                    <div class="topbar_left_section">
+                    <?php
+                            $header_links =[
+                                ['href'=>'#', 'text'=>' הרשמה'],
+                                ['href'=>'#', 'text'=>' התחברות'],
+                               
+                            ];
+                            foreach ($header_links as $key => $value) {
+                                # code...
+                                echo '<a class="font-bold" href="'.$value['href'].'" >'.$value['text'].'</a>';
+                            }
+                        ?>
+
+                    </div>
+
+                </nav>
 
             </header>

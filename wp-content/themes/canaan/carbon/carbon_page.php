@@ -8,10 +8,11 @@ add_action('carbon_fields_register_fields', 'crb_attach_page_options');
 function crb_attach_page_options()
 {
     $prefix = 'page-home';
-    $post_template =  $prefix.'.php';
+    $post_template =  'page-templates/home.php';
     $metaBox = Container::make('post_meta', 'הגדרות כלליות')->where('post_template', '=', $post_template);
     $metaBox->add_fields(array(
         Field::make( 'date', $prefix.'date', 'תאריך' ),
+        Field::make( 'image', $prefix.'image', 'תמונה' ),
     ));
 
     $prefix = 'page-contact';

@@ -1,5 +1,6 @@
 import 'vite/dynamic-import-polyfill'
 import '../css/tailwind.css';
+import '../css/cmp.css';
 // import './cross-site/images'
 
 const components = [
@@ -19,7 +20,7 @@ window.addEventListener('load', function () {
   );
   // start observing a DOM node
   resizeObserver.observe(document.body);
-  console.log('nemo ,load');
+  console.log('asdad ,load');
 
 });
 

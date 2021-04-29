@@ -6,6 +6,9 @@ if ( !defined('ABSPATH') ){
  
 get_header();
 global $posts;
+?>
+naamna
+<?php
 echo '<h1 class="text-center text-5xl py-16 px-6 bg-green-100">This is the New Bright and Shine CANAAN Theme</h1>';
 echo '<main  class="wp-content">';
 echo '<ul>';

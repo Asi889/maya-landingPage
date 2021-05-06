@@ -1,0 +1,403 @@
+
+.btn{
+    padding: 2px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 27px;
+    border-radius: 6px;
+    height: 59px;
+    width: 223px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.topbar_right_icon{
+    height: 100px;
+    width: 100px;
+}
+.bbtn{
+    color: blue;
+}
+.bbtn:focus{
+    color: chartreuse;
+}
+.hp-header-right{
+    flex: 0 0 640px;
+    margin-top: 20px;
+    margin-right: 161px;
+
+}
+.hp-header-left{
+    flex: 0 0 800px;
+
+}
+.topBarFontSize{
+    font-size: 25px;
+    color: #999999;
+}
+
+.topBarFontSize:hover{
+    color: #3C91A0 ;
+    font-weight: 800;
+}
+
+.landPageTopBarSignUp{
+    height: 42px;
+    width: 139px;
+    font-size: 25px;
+    color: #999999;
+    /* padding: 3px; */
+}
+
+.landPageTopBarSignUp:hover{
+    font-size: 25px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    /* padding: 3px; */
+    background-color: #FB9773;
+
+}
+.landingPageTitle{
+    color: #3C91A0;
+    font-size: 72px;
+    letter-spacing: 0;
+    line-height: 78px;
+    font-weight: 900;
+}
+
+.lp_firstPage_subtitle{
+    color: #999999;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.landingPage-sm-Divider{
+    box-sizing: border-box;
+    height: 1px;
+    width: 138px;
+    background-color:  #999999 ;
+    border: 3px solid #999999;
+    opacity: 0.3;
+    border-radius: 10px;
+    margin-top: 38px;
+    margin-bottom: 35px;
+}
+
+
+.lp_firstPageText_1{
+    /* height: 226.13px; */
+    width: 544px;
+    color: #343434;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: right;
+}
+
+
+.section_2{
+    /* height: 1080px; */
+    background: linear-gradient(143.28deg, #40C2C4 0%, #3C91A0 100%);
+    padding: 80px 0px;
+}
+.lp-section2-title{
+    height: 76px;
+    width: 500px;
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lp-section2-button{
+    box-sizing: border-box;
+    height: 305px;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 48px;
+    margin-bottom: 36px;
+    font-size: 34px;
+    letter-spacing: 0;
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lp-section2-button:hover{
+    box-sizing: border-box;
+    height: 305px;
+    width: 328px;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    color: #000000;
+    text-align: center;
+    margin-right: 48px;
+    margin-top: -20px;
+    margin-bottom: 36px;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 0 38px 124px 0 #28747A;
+}
+
+.section2_body{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(328px, 1fr) );
+    max-width: 1151px;
+    margin: auto;
+    gap: 50px 73px;
+}
+/* .section_2_b{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+} */
+
+.lp_section1_grey_background{
+    height: 1332px;
+    width: 1332px;
+    background: linear-gradient(145.91deg, #FFFFFF 0%, #E7E7E7 100%);
+border-radius: 50%;  
+}
+
+
+
+
+
+
+
+.swiper-container {
+    width: 1072px;
+    height: 400px;
+  }
+
+
+/* section-3 slide gallary  */
+
+
+/* ////////////section 2 */
+
+.lp_sec2_img{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+}
+
+
+/* section5 */
+
+
+.lp_sec5_text{
+    opacity: 0.8;
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.lp_sec8_text{
+    opacity: 0.8;
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 26px;
+    /* text-align: center; */
+    margin-right: 10px;
+
+}
+
+
+.lp_sec5_whiteball{
+    height: 32px;
+    width: 33.24px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #3EACB4;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    opacity: 0.8;
+
+}
+
+.lp_sec5_tags{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.lp_sec5_textwidth{
+    max-width: 780px;
+}
+
+.iframewraper{
+    width: 100%;
+    height: 567px;
+}
+.iframewraper iframe{
+    width: 100%;
+    height: 100%;
+}
+.sec7-container{
+    width: 100%;
+    height: 100%;
+}
+.sec7-container .logo-swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.lp_sec9_inputs{
+    background-color: #FB9773;
+    /* color: #FFFFFF !important; */
+    box-sizing: border-box;
+    height: 55px;
+    width: 324px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+.lp_sec9_inputs::placeholder{
+    color: #FFFFFF;
+    padding: 3px;
+}
+
+.lp_sec9_inputs:hover{
+    color:#FB9773;
+    padding: 3px;
+    background-color: #FFFFFF;
+}
+
+.lp-section9-title{
+    
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 78px;
+}
+
+/* .lp_sec9_checkbox{
+    box-sizing: border-box;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #FFFFFF;
+    vertical-align: top;
+
+} */
+
+
+.lp_sec9_radio input:checked ~ .checkmark {
+    background-color: red;
+}
+
+.lp_sec9_radio input {
+    position: absolute;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+.lp_sec9_checkbox {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.lp_sec9_radio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .lp_sec9_radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    /* position: absolute; */
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */section3
+  .lp_sec9_radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  /* .lp_sec9_radio .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  } */
+
+
+  
+
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .section3_container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .section3_right_title{
+    height: 42px;
+    width: 139px;
+    font-size: 25px;
+    color: #999999;
+    margin: auto;
+    /* padding: 3px; */
+}
+
+.section4_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.section4-left{
+    max-width: 65%;
+}
+
+
+

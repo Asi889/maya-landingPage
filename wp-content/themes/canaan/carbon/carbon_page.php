@@ -1,0 +1,42 @@
+<?php
+defined('ABSPATH') || die();
+
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action('carbon_fields_register_fields', 'crb_attach_page_options');
+function crb_attach_page_options()
+{
+    $prefix = 'page-home';
+    $post_template =  'page-templates/home.php';
+    $metaBox = Container::make('post_meta', 'הגדרות כלליות')->where('post_template', '=', $post_template);
+    $metaBox->add_fields(array(
+        Field::make('date', $prefix . 'date', 'תאריך'),
+        // Field::make('date',  'page-homedate', 'תאריך'),
+        Field::make('image', $prefix . 'image', 'תמונה'),
+        Field::make('complex', "{$prefix}benefits", 'רשימת יתרונות')
+            ->add_fields(array(
+                Field::make('text', 'title', 'יתרון')
+            )),
+        Field::make('complex', "{$prefix}navlinks", 'רשימת חלון עליון')
+            ->add_fields(array(
+                Field::make('text', 'title', 'שם הקישור'),
+                Field::make('text', 'href', 'לינק  הקישור')
+            )),
+    ));
+
+    $prefix = 'page-contact';
+    $post_template =  'page-templates/contact-us.php';
+    $metaBox = Container::make('post_meta', 'הגדרות כלליות')->where('post_template', '=', $post_template);
+    $metaBox->add_fields(array(
+        Field::make('rich_text', $prefix . 'date', 'תאריך'),
+    ));
+}
+
+
+// add_action('carbon_fields_{container_type}_container_saved', 'crb__post_meta_container_save');
+add_action('carbon_fields_post_meta_container_saved', 'crb__post_meta_container_save');
+
+function crb__post_meta_container_save()
+{
+}

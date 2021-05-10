@@ -1,6 +1,9 @@
 import 'vite/dynamic-import-polyfill'
 import '../css/tailwind.css';
 import '../css/cmp.css';
+import './swiper'
+import { formfunction } from './form';
+
 // import './cross-site/images'
 
 const components = [
@@ -20,16 +23,13 @@ window.addEventListener('load', function () {
   );
   // start observing a DOM node
   resizeObserver.observe(document.body);
-  console.log('asdad ,load');
 
 });
 
 window.addEventListener('DOMContentLoaded', function () {
-  components.forEach(component => {
-    if (document.querySelector(component.selector) !== null) {
-      document
-        .querySelectorAll(component.selector)
-        .forEach(element => new component.Class(element, component.options));
-    }
-  });
+  let form = document.querySelector('form');
+  if (form) {
+    
+    formfunction(form)
+  }
 });

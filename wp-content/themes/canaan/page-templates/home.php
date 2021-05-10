@@ -20,7 +20,7 @@ get_header();
 
 
     <div id="section-1" class="section-1">
-
+        <!-- <?php get_header();  ?> -->
         <?php include_once(dirname(__FILE__) . '/landingpage/section1.php'); ?>
 
     </div>
@@ -37,7 +37,7 @@ get_header();
 
     </div>
 
-    <div id="section-4" >
+    <div id="section-4">
 
         <?php include_once(dirname(__FILE__) . '/landingpage/section4.php'); ?>
 
@@ -49,14 +49,14 @@ get_header();
 
     </div>
 
-    <div id="section-6" class="h-section6_height " >
+    <div id="section-6" class="h-section6_height ">
 
         <?php include_once(dirname(__FILE__) . '/landingpage/section6.php'); ?>
 
     </div>
 
 
-    <div id="section-7" class=" h-section6_height " >
+    <div id="section-7" class=" h-section6_height ">
 
         <?php include_once(dirname(__FILE__) . '/landingpage/section-7.php'); ?>
 
@@ -64,7 +64,7 @@ get_header();
 
     <!-- <div id="section-8" class=" bg-mainOrange w-bbc" > -->
 
-        <?php include_once(dirname(__FILE__) . '/landingpage/section8.php'); ?>
+    <?php include_once(dirname(__FILE__) . '/landingpage/section8.php'); ?>
 
     <!-- </div> -->
 

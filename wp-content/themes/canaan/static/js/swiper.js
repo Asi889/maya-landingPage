@@ -2,10 +2,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-const section2swiper = new Swiper('.section2-swiper', {
+const section2swiper = new Swiper('.section3-swiper', {
   // Optional parameters
   direction: 'horizontal',
+  spaceBetween: 30,
   loop: true,
+  slidesPerView: 'auto',
 
   // If we need pagination
   pagination: {

@@ -3,13 +3,13 @@
 ?>
 
 
-<div class="section3_container flex  mt-28 mb-28">
+<div class="section3_container  mt-28 mb-28">
 
     <div class="section_3_right mt-20">
 
-        <div class="max-w-sec3_rightwidth mx-auto">
+        <!-- <div class="max-w-sec3_rightwidth mx-auto"> -->
             <?php include_once(dirname(__FILE__) . '/swiper.php'); ?>
-        </div>
+        <!-- </div> -->
     </div>
 
     <div class="section_3_left">

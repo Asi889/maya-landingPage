@@ -2,7 +2,7 @@
 
 ?>
 
-<div class="bg-lp_section4 section4_container ">
+<div class="bg-lp_section4 section4_container mb-3 ">
 
     <div class="section4-right ">
 
@@ -10,7 +10,7 @@
 
     </div>
 
-    <div class="section4-left ">
+    <div class="section4-left">
         <div class="">
             <!-- <div class="w-2/3"> -->
 

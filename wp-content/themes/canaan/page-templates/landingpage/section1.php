@@ -3,7 +3,10 @@
 
 
 ?>
-<div class="flex pt-2 pb-16">
+<div class="section1-container pt-2 pb-16">
+
+    <!-- <div class="lp_section1_bigball"></div> -->
+
     <div class="hp-header-right">
 
 
@@ -26,7 +29,7 @@
 
         <div class="landingPage-sm-Divider"></div>
 
-        <div class="w-80">
+        <div class="w-80 lp_firstPageText_1_container">
             <?php
             $lp_firstPageText = [
                 ['href' => '#', 'text' => ' בחירות הקשורות לקריירה הן בין ההחלטות החשובות ביותר שאנחנו מקבלים במהלך החיים. מה כדאי לי ללמוד? מה המקצוע הכי רווחי? איזו עבודה מתאימה לי? שאלות אלו ואחרות עולות בנו בתוך תהליך בחירת לימודים או מקצוע, וכובד ההחלטה הוא גדול.'],
@@ -69,9 +72,10 @@
 
     </div>
 
-    <div class="">
+    <div class="lp_section1_left">
 
         <img src="<?php echo get_template_directory_uri() . '/static/images/firstpagepic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
     </div>
+
 </div>

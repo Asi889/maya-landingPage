@@ -8,7 +8,7 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
 ?>
 
 
-<div class="swiper-container logo-swiper-container ">
+<div class="swiper-container sec7-swiper logo-swiper-container">
     <!-- Additional required wrapper -->
 
     <div class="swiper-button-prev"></div>

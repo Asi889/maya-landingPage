@@ -4,7 +4,7 @@
 
 ?>
 <form action="" name='form' class="lp_form-js" method="POST">
-    <div id="section-8" class="vvv py-16 mx-auto w-bbc bg-mainOrange flex justify-center">
+    <div id="section-8" class="lp_section8   bg-mainOrange">
         <!-- <div class="pp  "> -->
 
 
@@ -19,7 +19,7 @@
 
         <div class="lp_sec9_left flex-row mx-10">
 
-            <div class="flex justify-evenly my-2">
+            <div class="lp_section9_left_radio_container">
 
                 <div class="text-mainWhite ">
                     <input id="input1" type="radio" checked class="lp_sec9_checkbox mx-2" name="look_for_job_education" value="looking">

@@ -1,4 +1,5 @@
 <?php
+
 if ( !defined('ABSPATH') ){
     die();
 }
@@ -31,3 +32,6 @@ $misc=carbon_get_theme_option( $prefix.'email_accounts' );
 var_dump($misc);
 
 get_footer();
+
+
+

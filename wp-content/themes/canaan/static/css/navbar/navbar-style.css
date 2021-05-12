@@ -1,0 +1,39 @@
+.topnav{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topbar_right_icon{
+    height: 100px;
+    width: 100px;
+}
+
+.landPageTopBarSignUp{
+    height: 42px;
+    width: 139px;
+    font-size: 25px;
+    color: #999999;
+}
+
+.landPageTopBarSignUp:hover{
+    font-size: 25px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background-color: #FB9773;
+
+}
+
+.topBarFontSize{
+    font-size: 25px;
+    color: #999999;
+}
+
+.topBarFontSize:hover{
+    color: #3C91A0 ;
+    font-weight: 800;
+}

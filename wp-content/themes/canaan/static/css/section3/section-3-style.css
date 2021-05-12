@@ -1,0 +1,17 @@
+.section3-swiper{
+    width: auto;
+    height: auto;
+}
+
+.section3_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .section3_right_title{
+    height: 42px;
+    width: 139px;
+    font-size: 25px;
+    color: #999999;
+    margin: auto;
+}

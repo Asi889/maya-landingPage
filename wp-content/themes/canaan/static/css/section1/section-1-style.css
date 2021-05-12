@@ -1,0 +1,79 @@
+.lp_section1_bigball{
+    position: absolute;
+    border-radius: 50%;
+    height: 1332px;
+    width: 1332px;
+    background: linear-gradient(145.91deg, #FFFFFF 0%, #E7E7E7 100%);
+    z-index: -1;
+}
+
+.section1-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.hp-header-right{
+    flex: 0 0 640px;
+    padding: 20px;
+    margin: 20px 80px 20px 20px;
+}
+
+.hp-header-left{
+    flex: 0 0 800px;
+}
+
+.landingPageTitle{
+    color: #3C91A0;
+    font-size: 72px;
+    letter-spacing: 0;
+    line-height: 78px;
+    font-weight: 900;
+}
+
+.lp_firstPage_subtitle{
+    color: #999999;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.landingPage-sm-Divider{
+    box-sizing: border-box;
+    height: 1px;
+    width: 138px;
+    background-color:  #999999 ;
+    border: 3px solid #999999;
+    opacity: 0.3;
+    border-radius: 10px;
+    margin-top: 38px;
+    margin-bottom: 35px;
+}
+
+.lp_firstPageText_1{
+    /* height: 226.13px; */
+    width: 544px;
+    color: #343434;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: right;
+}
+
+.btn{
+    padding: 2px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 27px;
+    border-radius: 6px;
+    height: 59px;
+    width: 223px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.lp_section1_grey_background{
+    height: 1332px;
+    width: 1332px;
+    background: linear-gradient(145.91deg, #FFFFFF 0%, #E7E7E7 100%);
+    border-radius: 50%;  
+}

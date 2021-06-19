@@ -6,3 +6,10 @@
 body {
     font-family: almoni;
 };
+@media screen and (min-width: 500px) {
+    body{
+        width: 600px;
+    }
+    
+       
+}

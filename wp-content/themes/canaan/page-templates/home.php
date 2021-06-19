@@ -16,7 +16,8 @@ $mainObj = new canaan_post($post);
 
 get_header();
 ?>
-<main class="col-1-1">
+<main >
+<!-- <main class="col-1-1"> -->
 
 
     <div id="section-1" class="section-1">

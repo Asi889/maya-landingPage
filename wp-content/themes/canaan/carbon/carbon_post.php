@@ -17,15 +17,18 @@ function crb_attach_post_options()
     $metaBox->where('post_type', '=', $post_type);
     $metaBox->add_fields(
         array(
-            Field::make('text',
-             "{$prefix}text",
-              'אני טקסט'),
+            Field::make('text',"{$prefix}text",'אני טקסט'),
             Field::make('image', $prefix . 'image', 'תמונת תצוגה 1:1  {width:350,height:350}')->set_value_type('id'),
             Field::make('separator', 'crb_separator', __('Separator')),
             Field::make('complex', $prefix . 'services', ' זהו שדה מורכב')
                 ->add_fields(array(
                     Field::make('text', 'name'),
                 )),
+            Field::make('complex', "{$prefix}navlinks", 'רשימת חלון עליון')
+            ->add_fields(array(
+                Field::make('text', 'title', 'שם הקישור'),
+                Field::make('text', 'href', 'לינק  הקישור')
+            )),
         )
     );
 }

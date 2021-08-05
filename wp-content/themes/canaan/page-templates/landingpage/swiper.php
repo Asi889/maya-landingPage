@@ -11,10 +11,10 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
         $lp_firstPageSubtitle = [
             ['href' => '#', 'text' => ' מה במוצר?'],
         ];
-        foreach ($lp_firstPageSubtitle as $key => $value) {
-            # code...
-            echo '<h1 class="font-bold px-4 landPageTopBarSignUp" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
-        }
+        // foreach ($lp_firstPageSubtitle as $key => $value) {
+        //     # code...
+        //     echo '<h1 class="font-bold px-4 landPageTopBarSignUp" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
+        // }
         ?> -->
 
 <div class="swiper-container section3-swiper">
@@ -41,7 +41,7 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
                     ];
                     foreach ($lp_firstPageSubtitle as $key => $value) {
                         # code...
-                        echo '<h1 class="font-bold landingPageTitle" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
+                        echo '<h1 class="font-bold section3_blue_title" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
                     }
                     ?>
 
@@ -51,7 +51,7 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
                     ];
                     foreach ($first_slide_text as $key => $value) {
                         # code...
-                        echo '<p class="text-landingpage_section3sm_text text-landingpage_section3darkgrey" href="' . $value['href'] . '" >' . $value['text'] . '</p>';
+                        echo '<p class="text-landingpage_section3sm_text text-landingpage_section3darkgrey section3-text" href="' . $value['href'] . '" >' . $value['text'] . '</p>';
                     }
                     ?>
                 </div>

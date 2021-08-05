@@ -1,4 +1,10 @@
 
+/* .main > p h1 h2 h3 {
+    font-family: 'Assistant';
+} */
+
+
+
 .swiper-slide {
     font-size: 18px;
     background: #fff;
@@ -15,6 +21,24 @@
     -webkit-align-items: center;
     align-items: center;
 }
+/* .section2-swiper-slide {
+    font-size: 18px;
+    background: linear-gradient(143.28deg, #40C2C4 0%, #3C91A0 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 0px;
+    width: 95%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+} */
 
 
 
@@ -143,6 +167,37 @@
     
        
 }
+
+.parallax {  
+    background-image: url("http://example.com/wp-content/uploads/2017/08/my-background-image.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:-410px;
+    margin-right:-410px;
+    }
+
+    .parallax-content { 
+        width:50%;
+        margin:0 auto;
+        color:#FFF;
+        padding-top:50px; 
+        } 
+
+
+/* @media screen and (max-width: 700px) {
+    
+    .landingPageTitle {
+        color: #3C91A0;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: 78px;
+        font-weight: 900;
+    }
+       
+} */
 
 
 

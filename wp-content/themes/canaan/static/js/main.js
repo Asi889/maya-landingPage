@@ -38,7 +38,6 @@ window.addEventListener('load', function () {
 window.addEventListener('DOMContentLoaded', function () {
   let form = document.querySelector('form');
   if (form) {
-    
     formfunction(form)
   }
 });

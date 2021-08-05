@@ -13,7 +13,12 @@ function crb_attach_page_options()
     $metaBox->add_fields(array(
         Field::make('date', $prefix . 'date', 'תאריך'),
         // Field::make('date',  'page-homedate', 'תאריך'),
-        Field::make('image', $prefix . 'image', 'תמונה'),
+        Field::make('image', $prefix . 'first_image', 'תמונה ראשונה'),
+        Field::make('rich_text',"{$prefix}sub_title",'סאב-כותרת'),
+            Field::make('rich_text',"{$prefix}section1_first_text",'טקסט ראשון'),
+            Field::make('rich_text',"{$prefix}section1_second_text",'טקסט שני'),
+        Field::make('image', $prefix . 'seconde_image', 'תמונה שנייה'),
+        Field::make('image', $prefix . 'third_image', 'תמונה שלישית'),
         Field::make('complex', "{$prefix}benefits", 'רשימת יתרונות')
             ->add_fields(array(
                 Field::make('text', 'title', 'יתרון')
@@ -23,7 +28,32 @@ function crb_attach_page_options()
                 Field::make('text', 'title', 'שם הקישור'),
                 Field::make('text', 'href', 'לינק  הקישור')
             )),
-    ));
+        Field::make('complex', "{$prefix}header_signup", 'כפתור התחברות')
+            ->add_fields(array(
+                Field::make('text', 'title', 'שם כפתור'),
+                Field::make('text', 'href', 'לינק  הקישור')
+            )),
+        Field::make('complex', "{$prefix}header_register", 'כפתור הרשמה')
+            ->add_fields(array(
+                Field::make('text', 'title', 'טקסט'),
+                Field::make('text', 'href', 'לינק  הקישור')
+            )),
+        Field::make('complex', "{$prefix}section2_icons", 'section_icons')
+            ->add_fields( array(
+                Field::make('image', 'image', 'Add Image'),
+                Field::make('text', 'title', 'Insert Text'),
+            ))
+        ));
+        // Field::make('complex', "{$prefix}section2_images", 'אייקונים קטנים')
+        //     ->add_fields(array(
+        //         Field::make('image', 'icon_magnifying_glass', 'זכוכית מגדלת'),
+        //         Field::make('image', 'icon_hat', 'כובע'),
+        //         Field::make('image', 'icon_card', 'כרטיס חתוך'),
+        //         Field::make('image', 'icon_clock', 'שעון'),
+        //         Field::make('image', 'icon_reskilling', 'הגדרות'),
+        //         Field::make('image', 'icon_upskilling', 'איש'),
+                
+        //     )),
 
     $prefix = 'page-contact';
     $post_template =  'page-templates/contact-us.php';

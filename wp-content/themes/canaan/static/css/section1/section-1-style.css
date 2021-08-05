@@ -59,7 +59,7 @@
     text-align: right;
 }
 
-.btn{
+.btn_sec1{
     padding: 2px;
     font-weight: 700;
     letter-spacing: 0;
@@ -77,3 +77,57 @@
     background: linear-gradient(145.91deg, #FFFFFF 0%, #E7E7E7 100%);
     border-radius: 50%;  
 }
+.section1-pic{
+    width: 1163px;
+    height: 697px;
+}
+@media screen and (max-width: 700px) {
+    
+    .landingPageTitle {
+        font-size: 32px;
+        justify-self: center;
+    }
+    .lp_firstPage_subtitle {
+        font-size: 21px;
+        line-height: 21px;
+    }
+    .lp_firstPageText_1_container{
+        /* width: 0px; */
+    }
+    /* .lp_firstPageText_1{
+        width: auto;
+    } */
+    .lp_firstPageText_1{
+        font-size: 18px;
+        width: auto;
+        text-align: center;
+    }
+    .hp-header-right {
+        /* margin: auto; */
+        /* flex: 0 0 640px; */
+        /* padding: 20px; */
+        margin: 0;
+        display: grid;
+    }
+    .lp_section1_second_text{
+        width: auto;
+    }
+    .btn_sec1{
+        padding: 2px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 27px;
+        border-radius: 6px;
+        height: 35px;
+        width: auto;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .landingPage-sm-Divider{
+        justify-self: center;
+        border: 2px solid #999999;
+    }
+       
+}
+
+

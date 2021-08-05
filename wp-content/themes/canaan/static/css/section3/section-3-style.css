@@ -8,10 +8,41 @@
     grid-template-columns: 50% 50%;
   }
 
-  .section3_right_title{
+.section3_right_title{
     height: 42px;
     width: 139px;
     font-size: 25px;
     color: #999999;
     margin: auto;
+}
+
+.section3_blue_title{
+  color: #3C91A0;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 78px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 700px) {
+    
+  .section3_container {
+    display: block;
+}
+.section3_right_title{
+    font-size: 18px;
+    line-height: 18px;
+}
+.section3_blue_title{
+    font-size: 28px;
+    line-height: 28px;
+}
+.section3-text{
+    font-size: 18px;
+    line-height: 18px;
+}
+.section_3_right{
+    min-height: 150px;
+}
+     
 }

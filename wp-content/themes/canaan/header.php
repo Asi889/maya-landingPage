@@ -18,7 +18,7 @@ $mainObj = new canaan_post($post);
     ?>
     <?php get_template_part('parts/ga-tracking'); ?>
     <?php get_template_part('parts/font-loader'); ?>
-
+    
     <script>
         var __mainData = {
             nonce: '<?php echo wp_create_nonce('register_user'); ?>',
@@ -30,7 +30,7 @@ $mainObj = new canaan_post($post);
             postsPerPage: <?php echo get_option('posts_per_page'); ?>,
             offset: <?php echo get_option('posts_per_page'); ?>,
         }
-
+        
         function navbarfunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -39,14 +39,15 @@ $mainObj = new canaan_post($post);
                 x.className = "topnav";
             }
         }
-    </script>
+        </script>
 
-    <meta charset="<?php bloginfo('charset'); ?>" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Naaman Frenkel using WordPress">
-    <title><?php wp_title('|', true, 'right'); ?></title>
+<meta charset="<?php bloginfo('charset'); ?>" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="Naaman Frenkel using WordPress">
+<title><?php wp_title('|', true, 'right'); ?></title>
 
+<script src="jquery-3.5.1.min.js"></script>
     <?php
     wp_head();
     ?>
@@ -68,7 +69,9 @@ $mainObj = new canaan_post($post);
                     <!-- <div class="topBarMiddle justify-between my-auto"> -->
                         <?php
 
+                        // $links = carbon_get_page_meta('page-homenavlinks');
                         $links = carbon_get_the_post_meta('page-homenavlinks');
+                        
                         foreach ($links as $value) {
                             # code...
                             echo '<a class="px-4 topBarFontSize lp_header_middle"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
@@ -80,14 +83,14 @@ $mainObj = new canaan_post($post);
 
                     <div class="topbar_left_section my-auto">
                         <?php
-                        $header_links = [
-                            ['href' => '#', 'text' => ' הרשמה'],
-                            ['href' => '#', 'text' => ' התחברות'],
-
-                        ];
+                        // $header_links = carbon_get_the_post_meta('page-homeheader_signup');
+                        // $header_links = carbon_get_the_post_meta('page-homeheader_register');
+                        $header_links = canaan_get_menu_array('primary');
+                
+                        // // ];
                         foreach ($header_links as $key => $value) {
                             # code...
-                            echo '<a class="font-bold px-4 landPageTopBarSignUp lp_header_leftsec" href="' . $value['href'] . '" >' . $value['text'] . '</a>';
+                            echo '<a class="font-bold px-4 landPageTopBarSignUp lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';
                         }
                         ?>
 

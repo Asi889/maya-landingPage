@@ -31,10 +31,10 @@
                     <label for="input2" class="lp_sec8_text">מעסיק</label>
                 </div>
 
-                <div class="text-mainWhite">
+                <!-- <div class="text-mainWhite">
                     <input id="input3" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="help">
                     <label for="input3" class="lp_sec8_text">מרכז ייעוץ תעסוקתי</label>
-                </div>
+                </div> -->
             </div>
 
             <div class="flex-col">

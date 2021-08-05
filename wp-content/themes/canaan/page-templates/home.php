@@ -28,7 +28,13 @@ get_header();
 
     <div class="section_2 mb-16">
 
-        <?php include_once(dirname(__FILE__) . '/landingpage/section2.php'); ?>
+        <?php
+        //  include_once(dirname(__FILE__) . '/landingpage/section2.php'); 
+         ?>
+
+        <?php 
+        include_once(dirname(__FILE__) . '/landingpage/section2-swiper.php'); 
+        ?>
 
     </div>
 
@@ -38,17 +44,17 @@ get_header();
 
     </div>
 
-    <div id="section-4">
+    <!-- <div id="section-4"> -->
 
-        <?php include_once(dirname(__FILE__) . '/landingpage/section4.php'); ?>
+        <!-- <?php include_once(dirname(__FILE__) . '/landingpage/section4.php'); ?> -->
 
-    </div>
+    <!-- </div> -->
 
-    <div id="section-5" class="section_2 ">
+    <!-- <div id="section-5" class="section_2 "> -->
 
-        <?php include_once(dirname(__FILE__) . '/landingpage/section5.php'); ?>
+        <!-- <?php include_once(dirname(__FILE__) . '/landingpage/section5.php'); ?> -->
 
-    </div>
+    <!-- </div> -->
 
     <div id="section-6" class="h-section6_height ">
 

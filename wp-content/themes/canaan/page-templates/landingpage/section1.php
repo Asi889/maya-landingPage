@@ -67,11 +67,11 @@
 
             <?php
             $lp_firstPage_button = [
-                ['href' => '#', 'text' => ' בוא נתחיל'],
+                ['href' => '#', 'text' => 'להרשמה'],
             ];
             foreach ($lp_firstPage_button as $key => $value) {
                 # code...
-                echo '<a class="text-mainWhite bg-mainOrange btn_sec1" href="' . $value['href'] . '" >' . $value['text'] . '</a>';
+                echo '<a class="text-mainWhite" href="' . $value['href'] . '" >' . $value['text'] . '</a>';
             }
             ?>
 
@@ -93,21 +93,7 @@
         <div class="paralax">
             
             <img class="section1-pic layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/firstpagepic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        
 
-                <!-- <script type="text/javascript">
-                    document.addEventListener("mousemove", parallax)
-                    function parallax(e){
-                    querySelectorAll('.layer').foreach((layer) => {
-                        const speed = layer.getAttribute('data-speed')
-                        const x = (window.innerWidth - e.pageX*spped)/100
-                        const y = (window.innerHeight - e.pageY*spped)/100
-                        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-                    })
-                } 
-                </script> -->
-
-             
         </div>
 
     </div>

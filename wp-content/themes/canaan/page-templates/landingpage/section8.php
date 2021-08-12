@@ -21,20 +21,15 @@
 
             <div class="lp_section8_left_radio_container">
 
-                <div class="text-mainWhite ">
+                <div class="text-mainWhite flex items-center">
                     <input id="input1" type="radio" checked class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="looking">
                     <label for="input1 " class="lp_sec8_text">מחפש עבודה/לימודים</label>
                 </div>
 
-                <div class="text-mainWhite">
+                <div class="text-mainWhite flex items-center">
                     <input id="input2" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="eployer">
                     <label for="input2" class="lp_sec8_text">מעסיק</label>
                 </div>
-
-                <!-- <div class="text-mainWhite">
-                    <input id="input3" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="help">
-                    <label for="input3" class="lp_sec8_text">מרכז ייעוץ תעסוקתי</label>
-                </div> -->
             </div>
 
             <div class="flex-col">
@@ -44,6 +39,7 @@
 
             <div class="flex-col">
                 <input type="email" placeholder="מייל" class="lp_sec8_inputs mx-2 my-2" name="form-mail">
+                <!-- <input type="button" placeholder="שלח" class="lp_sec8_inputs mx-2 my-2" name="form-mail"> -->
                 <button class="lp_sec8_inputs mx-2 my-2">שלח</button>
             </div>
 
@@ -54,4 +50,5 @@
         </div>
         <!-- </div> -->
     </div>
+    <div class="lp_se8_big_ball"></div>
 </form>

@@ -1,7 +1,9 @@
 .topnav{
-    display: grid;
+    /* display: grid; */
     grid-auto-flow: column;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .topnav .icon {
@@ -37,3 +39,33 @@
     color: #3C91A0 ;
     font-weight: 800;
 }
+
+.small_hd_navlinks{
+    display: none;
+    position: absolute;
+        left: 0;
+        top: 122px;
+/* display: grid; */
+}
+.smalsize{
+    font-size: 15px;
+}
+.ssm{
+    display: grid;
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    top: 122px;
+}
+
+@media screen and (max-width: 700px) {
+    .topBarFontSize{
+        font-size: 15px;
+    }
+    .topnav{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+    }
+}
+

@@ -32,12 +32,18 @@ $mainObj = new canaan_post($post);
         }
         
         function navbarfunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
+            var x = document.getElementById("smalllinks");
+            if (x.className === "small_hd_navlinks") {
+                x.className = "ssm";
             } else {
-                x.className = "topnav";
+                x.className = "small_hd_navlinks";
             }
+            // var x = document.getElementById("smalllinks");
+            // if (x.className === "topnav") {
+            //     x.className += " responsive";
+            // } else {
+            //     x.className = "topnav";
+            // }
         }
         </script>
 
@@ -57,15 +63,14 @@ $mainObj = new canaan_post($post);
     <div id="app">
         <div class="sitcky-footer">
             <header>
-                <nav class="max-w-bbc p-8 nav_height bg-topBarColor  justify-evenly topnav" id="myTopnav">
+                <nav class="topnav" id="myTopnav">
 
-                    <a href="javascript:void(0);" style="font-size: 35px;" class="icon" onclick="navbarfunction()">&#9776;</a>
-
+                        <a href="javascript:void(0);" style="font-size: 35px;" class="icon col-start-6" onclick="navbarfunction()">&#9776;</a>
+                    
                     <div class="topbar_right_icon ">
                         <img class="lp_header_img" src="<?php echo get_template_directory_uri() . '/static/images/logo.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-
+                        
                     </div>
-
                     <!-- <div class="topBarMiddle justify-between my-auto"> -->
                         <?php
 
@@ -74,9 +79,20 @@ $mainObj = new canaan_post($post);
                         
                         foreach ($links as $value) {
                             # code...
-                            echo '<a class="px-4 topBarFontSize lp_header_middle"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                            echo '<a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
                         }
                         ?>
+
+                        <div class="small_hd_navlinks" id="smalllinks">
+                            <?php
+                        foreach ($links as $value) {
+                            # code...
+                            echo '<a class="px-4 topBarFontSize lp_header_middle text-left"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                        
+                        }
+                        
+                        ?>
+                        </div>
 
 
                     <!-- </div> -->
@@ -90,7 +106,7 @@ $mainObj = new canaan_post($post);
                         // // ];
                         foreach ($header_links as $key => $value) {
                             # code...
-                            echo '<a class="font-bold px-4 landPageTopBarSignUp lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';
+                            echo '<a class="font-bold px-4 landPageTopBarSignUp main_links lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';
                         }
                         ?>
 

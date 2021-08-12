@@ -130,6 +130,10 @@
     background-color: white;
     border-color: white;
   }
+  .lp_form-js{
+    position: relative;
+    overflow: hidden;
+  }
 
   @media screen and (max-width: 700px) {
 
@@ -146,11 +150,37 @@
         font-size: 20px;
         line-height: 20px;
     }
-    .lp_sec8_inputs {
-        
-        width: auto;
-        
+    .lp_sec8_inputs {    
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px; 
+        height: 44px; 
     }
+    .lp_sec8_right{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .lp_sec8_left{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .lp_se8_big_ball{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: absolute;
+        bottom: -61px;
+        left: -66px;
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+
+    .lp_sec8_checkbox{
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    
     
        
 }

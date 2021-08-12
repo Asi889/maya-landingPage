@@ -35,24 +35,30 @@ get_header();
         <?php 
         include_once(dirname(__FILE__) . '/landingpage/section2-swiper.php'); 
         ?>
-
+        <div class="section2-media-bigball"></div>
     </div>
 
-    <div id="section-3" class="section3  bg-topBarColor">
+    <!-- <div id="section-3" class="section3  bg-topBarColor"> -->
 
-        <?php include_once(dirname(__FILE__) . '/landingpage/section3.php'); ?>
+        <?php 
+        // include_once(dirname(__FILE__) . '/landingpage/section3.php');
+         ?>
 
-    </div>
+    <!-- </div> -->
 
     <!-- <div id="section-4"> -->
 
-        <!-- <?php include_once(dirname(__FILE__) . '/landingpage/section4.php'); ?> -->
+        <?php
+        //  include_once(dirname(__FILE__) . '/landingpage/section4.php');
+        ?>
 
     <!-- </div> -->
 
     <!-- <div id="section-5" class="section_2 "> -->
 
-        <!-- <?php include_once(dirname(__FILE__) . '/landingpage/section5.php'); ?> -->
+        <?php
+        //  include_once(dirname(__FILE__) . '/landingpage/section5.php'); 
+         ?>
 
     <!-- </div> -->
 

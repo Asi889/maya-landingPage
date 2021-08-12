@@ -47,8 +47,7 @@
         <img class="lp_sec2_img green-person" src="<?php echo get_template_directory_uri() . '/static/images/greenperson.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
         <p>Upskilling</p>     
     </div>
+    
 
 
 </div>
-
-<div class="section_2_bigball"></div>

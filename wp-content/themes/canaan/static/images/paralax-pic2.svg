@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="499px" height="607px" viewBox="0 0 499 607" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>99C9BD63-5334-4666-8864-CB066FD0EC56</title>
+    <defs>
+        <filter x="-25.3%" y="-19.6%" width="150.7%" height="139.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="19" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0489241745   0 0 0 0 0.122989244   0 0 0 0 0.130180027  0 0 0 0.161979622 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M1.23077426,2.875 L3.38101213,0.72476213 C3.53966262,0.566111636 3.53966262,0.308888364 3.38101213,0.15023787 C3.22236164,-0.00841262338 2.96513836,-0.00841262338 2.80648787,0.15023787 L0.36898787,2.58773787 C0.210337377,2.74638836 0.210337377,3.00361164 0.36898787,3.16226213 L2.80648787,5.59976213 C2.96513836,5.75841262 3.22236164,5.75841262 3.38101213,5.59976213 C3.53966262,5.44111164 3.53966262,5.18388836 3.38101213,5.02523787 L1.23077426,2.875 Z" id="path-2"></path>
+        <circle id="path-4" cx="38.594556" cy="38.4107724" r="38.4107724"></circle>
+        <path d="M37.9183237,13.7482646 C40.7031113,19.401402 42.9035949,23.3816153 42.9035949,23.3816153 L42.9035949,23.3816153 L57.8123407,64.3462425 L57.4585027,64.4901545 C52.926594,66.2841731 48.0080774,67.3046451 42.8635183,67.3899904 L42.1606015,67.395817 C30.4222519,67.395817 19.8138208,62.5274977 12.2203407,54.6878004 L42.1781047,25.3480259 Z" id="path-6"></path>
+        <filter x="-20.8%" y="-10.2%" width="141.7%" height="135.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.152941176   0 0 0 0 0.149019608   0 0 0 0 0.262745098  0 0 0 0.235303759 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter id="filter-8">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.423529 0 0 0 0 0.423529 0 0 0 0 0.423529 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <path d="M1.76923882,4.8 L5.20961941,1.35961941 C5.4634602,1.10577862 5.4634602,0.694221382 5.20961941,0.440380592 C4.95577862,0.186539803 4.54422138,0.186539803 4.29038059,0.440380592 L0.390380592,4.34038059 C0.136539803,4.59422138 0.136539803,5.00577862 0.390380592,5.25961941 L4.29038059,9.15961941 C4.54422138,9.4134602 4.95577862,9.4134602 5.20961941,9.15961941 C5.4634602,8.90577862 5.4634602,8.49422138 5.20961941,8.24038059 L1.76923882,4.8 Z" id="path-9"></path>
+        <path d="M1.76923882,4.8 L5.20961941,1.35961941 C5.4634602,1.10577862 5.4634602,0.694221382 5.20961941,0.440380592 C4.95577862,0.186539803 4.54422138,0.186539803 4.29038059,0.440380592 L0.390380592,4.34038059 C0.136539803,4.59422138 0.136539803,5.00577862 0.390380592,5.25961941 L4.29038059,9.15961941 C4.54422138,9.4134602 4.95577862,9.4134602 5.20961941,9.15961941 C5.4634602,8.90577862 5.4634602,8.49422138 5.20961941,8.24038059 L1.76923882,4.8 Z" id="path-11"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Styleguide" transform="translate(-780.000000, -9511.000000)">
+            <g id="Group-66" transform="translate(279.000000, 9497.000000)">
+                <g id="Group-33" filter="url(#filter-1)" transform="translate(569.000000, 82.500000)">
+                    <g id="Group-20">
+                        <g id="Group-91" transform="translate(0.000000, 25.350000)"></g>
+                        <g id="chevron-left" transform="translate(9.500000, 341.950000)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-2"></use>
+                            <g id="COLOR/-black" mask="url(#mask-3)" fill="#FFFFFF">
+                                <g transform="translate(-3.000000, -2.000000)" id="Rectangle">
+                                    <rect x="0" y="0" width="9.75" height="9.75"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-6">
+                            <rect id="Rectangle-Copy-14" fill="#FFFFFF" x="0" y="0" width="362.05" height="469.3" rx="6.5"></rect>
+                            <g id="Group-2" transform="translate(35.750000, 97.500000)"></g>
+                            <g id="Group-28" transform="translate(16.100000, 14.300000)">
+                                <text id="המאפיינים-העיקריים-ש" font-family="AlmoniDLAAA-Bold, Almoni DL AAA" font-size="11.7" font-weight="bold" fill="#000000">
+                                    <tspan x="213.8" y="57.45">המאפיינים העיקריים שלך:</tspan>
+                                </text>
+                                <text id="מיכולתך-להיות-קשוב-ל" opacity="0.699999988" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="11.05" font-weight="normal" line-spacing="15.6" fill="#000000">
+                                    <tspan x="46.2416016" y="170.2">מיכולתך להיות קשוב לצרכיהם של אנשים אחרים ולסייע להם להשיג את </tspan>
+                                    <tspan x="25.2854492" y="185.8">מטרותיהם.מסתמן כי הפרופיל התעסוקתי שלך הוא *יזמי-מנהלי-חברתי: אתה </tspan>
+                                    <tspan x="32.6395264" y="201.4">בעל כושר מנהיגות, חשוב לך להשפיע, להימנות עם מקבלי ההחלטות ולקדם </tspan>
+                                    <tspan x="28.6576416" y="217">נושאים שתחת אחריותך , נמשך לעבודה עם נתונים, שואף לסדר ומכוון לפעול </tspan>
+                                    <tspan x="14.8397461" y="232.6">בסביבה מוגדרת וממיכולתך להיות קשוב לצרכיהם של אנשים אחרים ולסייע להם </tspan>
+                                    <tspan x="81.8195801" y="248.2">להשיג את מטרותיהם.מסתמן כי הפרופיל התעסוקתי שלך הוא *</tspan>
+                                </text>
+                                <text id="מסתמן-כי-הפרופיל-התע" opacity="0.699999988" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="11.05" font-weight="normal" line-spacing="15.6" fill="#000000">
+                                    <tspan x="173.03064" y="77.9">מסתמן כי הפרופיל התעסוקתי שלך הוא </tspan>
+                                    <tspan x="113.9" y="93.5">*יזמי-מנהלי-חברתי: אתה בעל כושר מנהיגות, חשוב לך </tspan>
+                                    <tspan x="116.9875" y="109.1">להשפיע, להימנות עם מקבלי ההחלטות ולקדם נושאים </tspan>
+                                    <tspan x="113.9" y="124.7">שתחת אחריותך , נמשך לעבודה עם נתונים, שואף לסדר </tspan>
+                                    <tspan x="184.366602" y="140.3">ומכוון לפעול בסביבה מוגדרת ומובנית</tspan>
+                                </text>
+                                <g id="Group-24" transform="translate(0.150000, 0.000000)" line-spacing="14.95">
+                                    <text id="סיכום-תוצאות-שלב" opacity="0.300000012" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="14.3" font-weight="normal" fill="#000000">
+                                        <tspan x="231.7" y="13.3">סיכום תוצאות שלב </tspan>
+                                    </text>
+                                    <text id="מה-עשיתי-עד-כה" font-family="AlmoniDLAAA-Black, Almoni DL AAA" font-size="18.85" font-weight="800" fill="#6C6C6C">
+                                        <tspan x="211.55" y="32.9">מה עשיתי עד כה</tspan>
+                                    </text>
+                                </g>
+                                <g id="Group-8" transform="translate(0.000000, 59.150000)">
+                                    <g id="Group-2" transform="translate(14.341800, 0.520000)">
+                                        <mask id="mask-5" fill="white">
+                                            <use xlink:href="#path-4"></use>
+                                        </mask>
+                                        <use id="Oval-16" fill="#317885" xlink:href="#path-4"></use>
+                                    </g>
+                                    <g id="Oval-15" transform="translate(35.016584, 40.571030) rotate(-303.000000) translate(-35.016584, -40.571030) ">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                        <use fill="#45A4C7" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                    </g>
+                                    <path d="M53.2011578,0.52 C74.4076939,0.52 91.7359998,17.7832374 91.7359998,39.2468978 C91.7359998,60.3738026 74.4076939,77.63704 53.2011578,77.63704 C44.3004756,77.63704 36.119405,74.6906276 29.58249,69.7426201 L52.8171198,38.9307724 L52.5561811,0.525 Z" id="Oval-15" fill="#10143F"></path>
+                                    <path d="M52.5977647,0 C74.2431232,0 91.93,17.6937067 91.93,39.6925764 C91.93,61.3462933 74.2431232,79.04 52.5977647,79.04 C43.5129613,79.04 35.1626508,76.0201561 28.4904902,70.9488263 L52.2057799,39.3685682 L51.9401812,0.005 Z" id="Oval-15-Copy" fill="#A8DFCE"></path>
+                                    <circle id="Oval-16" fill="#FFFFFF" cx="52.9972998" cy="38.89834" r="22.16214"></circle>
+                                    <text id="יזמי-copy" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="6.17792" font-weight="normal" fill="#FFFFFF">
+                                        <tspan x="26.99" y="18.52">יזמי</tspan>
+                                    </text>
+                                    <text id="מנהלי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="6.17792" font-weight="normal" fill="#FFFFFF">
+                                        <tspan x="15.08" y="53.88">מנהלי</tspan>
+                                    </text>
+                                    <text id="ביצועי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="6.17792" font-weight="normal" fill="#FFFFFF">
+                                        <tspan x="73.45" y="50.76">ביצועי</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                            <g id="Group-18" transform="translate(19.950000, 305.500000)">
+                                <g id="Group-31">
+                                    <g id="Group-4">
+                                        <text id="ביצועי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="17.5616341" y="83.35">ביצועי</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#A8DFCE" cx="48.1302842" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <text id="יזמי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="78.3893428" y="83.35">יזמי</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#317885" cx="101.493783" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <text id="מנהלי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="232.665631" y="83.35">מנהלי</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#45A4C7" cx="261.01048" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <text id="חקרני" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="182.39254" y="83.35">חקרני</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#4EA8B5" cx="212.237389" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <text id="אומנותי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="125.362433" y="83.35">אומנותי</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#6C6C6C" cx="158.87389" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <text id="חברתי" font-family="AlmoniDLAAA, Almoni DL AAA" font-size="7.7224" font-weight="normal" fill="#020230">
+                                            <tspan x="285.37913" y="83.35">חברתי</tspan>
+                                        </text>
+                                        <ellipse id="Oval" fill="#252464" cx="316.095382" cy="81.25" rx="4.01660746" ry="4.55"></ellipse>
+                                        <line x1="17.4319272" y1="4.777" x2="325.760865" y2="4.777" id="Line-Copy-4" stroke="#DEDEDE" stroke-width="0.5516" stroke-linecap="square" stroke-dasharray="0.5516000390052795,1.654800057411194"></line>
+                                        <line x1="17.4319272" y1="43.9406" x2="325.760865" y2="43.9406" id="Line-Copy-5" stroke="#DEDEDE" stroke-width="0.5516" stroke-linecap="square" stroke-dasharray="0.5516000390052795,1.654800057411194"></line>
+                                        <line x1="17.4319272" y1="24.083" x2="325.760865" y2="24.083" id="Line-Copy-6" stroke="#DEDEDE" stroke-width="0.5516" stroke-linecap="square" stroke-dasharray="0.5516000390052795,1.654800057411194"></line>
+                                        <line x1="17.4319272" y1="63.2466" x2="325.760865" y2="63.2466" id="Line-Copy-7" stroke="#DEDEDE" stroke-width="0.5516" stroke-linecap="square" stroke-dasharray="0.5516000390052795,1.654800057411194"></line>
+                                        <text id="10" font-family="Roboto-Regular, Roboto" font-size="6.6192" font-weight="normal" fill="#C1C1C4">
+                                            <tspan x="1.71632813" y="45">10</tspan>
+                                        </text>
+                                        <text id="0" font-family="Roboto-Regular, Roboto" font-size="6.6192" font-weight="normal" fill="#C1C1C4">
+                                            <tspan x="5.33316406" y="64.5">0</tspan>
+                                        </text>
+                                        <text id="20" font-family="Roboto-Regular, Roboto" font-size="6.6192" font-weight="normal" fill="#C1C1C4">
+                                            <tspan x="1.21632813" y="25.5">20</tspan>
+                                        </text>
+                                        <text id="30" font-family="Roboto-Regular, Roboto" font-size="6.6192" font-weight="normal" fill="#C1C1C4">
+                                            <tspan x="0.640129191" y="6">30</tspan>
+                                        </text>
+                                        <rect id="Rectangle-Copy-3" fill="#A8DFCE" x="30.6269538" y="22.75" width="26.9686501" height="40.95"></rect>
+                                        <rect id="Rectangle-Copy-3" fill="#317885" x="81.1214476" y="5.85" width="26.9686501" height="57.85"></rect>
+                                        <rect id="Rectangle-Copy-3" fill="#252464" x="283.099423" y="39" width="26.9686501" height="24.7"></rect>
+                                        <rect id="Rectangle-Copy-3" fill="#6C6C6C" x="131.615941" y="49.4" width="26.9686501" height="14.3"></rect>
+                                        <rect id="Rectangle-Copy-4" fill="#4EA8B5" x="182.110435" y="49.4" width="26.9686501" height="14.3"></rect>
+                                        <rect id="Rectangle-Copy-6" fill="#45A4C7" x="232.604929" y="16.25" width="26.9686501" height="47.45"></rect>
+                                        <text id="30%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="85.5323276" y="58.65">30%</tspan>
+                                        </text>
+                                        <text id="1%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="137.831724" y="58.65">1%</tspan>
+                                        </text>
+                                        <text id="1%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="189.074138" y="58.65">1%</tspan>
+                                        </text>
+                                        <text id="7%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="289.331034" y="58.65">7%</tspan>
+                                        </text>
+                                        <text id="20%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="238.145603" y="58.65">20%</tspan>
+                                        </text>
+                                        <text id="24%" font-family="Roboto-Black, Roboto" font-size="6.5" font-weight="800" line-spacing="7.2072" fill="#FFFFFF">
+                                            <tspan x="35.9608621" y="58.65">24%</tspan>
+                                        </text>
+                                    </g>
+                                    <g id="Group-30" transform="translate(78.539343, 76.700000)"></g>
+                                    <g id="Group-23" transform="translate(233.465631, 76.700000)"></g>
+                                    <g id="Group-23-Copy" transform="translate(184.692540, 76.700000)"></g>
+                                    <g id="Group-23-Copy-2" transform="translate(127.312433, 76.700000)"></g>
+                                    <g id="Group-19" transform="translate(286.829130, 76.700000)"></g>
+                                </g>
+                                <g id="Group-7" transform="translate(15.950000, 3.900000)"></g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-29" transform="translate(20.800000, 425.750000)">
+                        <g id="Group-27">
+                            <rect id="Rectangle-Copy-16" stroke="#6C6C6C" stroke-width="1.3" transform="translate(231.725000, 15.275000) scale(1, -1) translate(-231.725000, -15.275000) " x="143" y="0.65" width="177.45" height="29.25" rx="6.5"></rect>
+                            <rect id="Rectangle-Copy-17" fill="#F19672" transform="translate(68.362915, 15.275000) scale(1, -1) translate(-68.362915, -15.275000) " x="6.4659389e-14" y="0" width="136.725831" height="30.55" rx="6.5"></rect>
+                            <text id="לשלב-הבא" font-family="AlmoniDLAAA-Bold, Almoni DL AAA" font-size="13" font-weight="bold" fill="#FFFFFF">
+                                <tspan x="42.25" y="19.45">לשלב הבא</tspan>
+                            </text>
+                            <text id="תוצאות-השלב" font-family="AlmoniDLAAA-Bold, Almoni DL AAA" font-size="13" font-weight="bold" fill="#6C6C6C">
+                                <tspan x="196.725" y="19.45">תוצאות השלב</tspan>
+                            </text>
+                        </g>
+                        <g filter="url(#filter-8)" id="chevron-left">
+                            <g transform="translate(155.600266, 11.125000)">
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
+                                </mask>
+                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-9"></use>
+                                <g id="COLOR/-black" mask="url(#mask-10)" fill="#000000">
+                                    <g transform="translate(-5.000000, -3.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="15.6" height="15.6"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="chevron-left-copy" transform="translate(10.650266, 11.125000)">
+                            <mask id="mask-12" fill="white">
+                                <use xlink:href="#path-11"></use>
+                            </mask>
+                            <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-11"></use>
+                            <g id="COLOR/-black" mask="url(#mask-12)" fill="#FFFFFF">
+                                <g transform="translate(-5.000000, -3.000000)" id="Rectangle">
+                                    <rect x="0" y="0" width="15.6" height="15.6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

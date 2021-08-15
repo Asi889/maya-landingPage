@@ -4,9 +4,9 @@
 
 ?>
 
+
 <div class="section1-container pt-2 pb-16">
 
-    <!-- <div class="lp_section1_bigball"></div> -->
 
     <div class="hp-header-right">
 
@@ -35,7 +35,7 @@
         <div class="w-80 lp_firstPageText_1_container">
             <?php
             $first_text = carbon_get_the_post_meta('page-homesection1_first_text');
-                echo '<p class="lp_firstPageText_1" >' . $first_text. '</p>';
+            echo '<p class="lp_firstPageText_1" >' . $first_text . '</p>';
             // $lp_firstPageText = [
             //     ['href' => '#', 'text' => ' בחירות הקשורות לקריירה הן בין ההחלטות החשובות ביותר שאנחנו מקבלים במהלך החיים. מה כדאי לי ללמוד? מה המקצוע הכי רווחי? איזו עבודה מתאימה לי? שאלות אלו ואחרות עולות בנו בתוך תהליך בחירת לימודים או מקצוע, וכובד ההחלטה הוא גדול.'],
             // ];
@@ -50,7 +50,7 @@
         <div class="w-80 lp_section1_second_text">
             <?php
             $second_text = carbon_get_the_post_meta('page-homesection1_second_text');
-            echo '<p class="lp_firstPageText_1" >' . $second_text. '</p>';
+            echo '<p class="lp_firstPageText_1" >' . $second_text . '</p>';
             // $lp_firstPageText = [
             //     ['href' => '#', 'text' => 'בואו נצא למסע משותף, הקליקו על בואו נתחיל ומאיה, היועצת הדיגיטלית שלכם, תלווה אתכם בקבלת ההחלטות הגדולות של הקריירה'],
             // ];
@@ -80,37 +80,29 @@
     </div>
 
     <div class="lp_section1_left">
-        <!-- <?php
-            $first_image = carbon_get_the_post_meta('page-homefirst_image');
-            print_r($first_image);
-            ?>
-            <br></br>
-            <?php
-            print_r($first_image[0]);
-            echo '<img class="lp_sec2_img" src="'. $first_image .'">';
-        ?> -->
 
-        <div class="paralax">
-            
-            <img class="section1-pic layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/firstpagepic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        <div class="parallax">
+            <div class="parallax-layer parallax-layer__1" data-parallax-disallow="y" data-parallax-deep="1000">
+                <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic1.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
+
+
+                <div class="parallax-layer parallax-layer__2" data-parallax-deep="40">
+                    <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic2.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                </div>
+                <div class="parallax-layer parallax-layer__3" data-parallax-deep="100">
+                    <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic3.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                </div>
+            </div>
         </div>
 
+
+        <!-- <div class="paralax">
+
+            <img class="section1-pic layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/firstpagepic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+
+        </div> -->
+
     </div>
 
-</div>
-
-
-<div class="items">
-  <div class="items__inner" id="js-scene">
-    <div class="items__layer layer" data-depth="0.85">
-        <div class="items__item" data-title="no.1"></div>
-    </div>
-
-
-    <div class="items__layer layer" data-depth="0.70"><div class="items__item" data-title="no.2"></div></div>
-    <div class="items__layer layer" data-depth="0.65"><div class="items__item" data-title="no.3"></div></div>
-    <div class="items__layer layer" data-depth="1.20"><div class="items__item" data-title="no.4"></div></div>
-    <div class="items__layer layer" data-depth="0.00"><div class="items__item" data-title="no.5"></div></div>
-  </div>
 </div>

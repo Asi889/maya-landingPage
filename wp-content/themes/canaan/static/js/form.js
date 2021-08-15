@@ -3,6 +3,8 @@
 export const formfunction = function (form) {
     console.log(form);
     let box = document.querySelector('.message_box');
+    const formWrapper = document.querySelector('.lp_section8');
+    const formMessage = document.querySelector('.section8-form-message');
 
 
     form.addEventListener('submit', function (event) {
@@ -29,10 +31,13 @@ export const formfunction = function (form) {
             return Promise.reject(response);
         }).then(function (data) {
             if (data.status==='fail') {
-
+                
                  return box.innerHTML = '<h2 class="text-2xl">המייל שהזנת לא תקין בום!</h2>'
             }
-            box.innerHTML = '<h2 class="text-2xl">ההודעה נשלחה בהצלחה, תודה</h2>'
+            formWrapper.style.display = 'none';
+            formMessage.style.display = 'block';
+            // box.innerHTML = '<h2 class="text-2xl">ההודעה נשלחה בהצלחה, תודה</h2>'
+            // box.innerHTML = '<div class="section8-form-message"><h1 class="lp-section8-title my-5">ההודעה נשלחה בצלחה!</h1><p class="lp_sec8_form-message-text">תודה שפניתם אלינו</p></div>'
             console.log(data);
         }).catch(function (error) {
 

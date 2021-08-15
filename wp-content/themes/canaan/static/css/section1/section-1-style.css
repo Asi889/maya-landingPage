@@ -78,11 +78,18 @@
     background: linear-gradient(145.91deg, #FFFFFF 0%, #E7E7E7 100%);
     border-radius: 50%;  
 }
+/* .lp_section1_left{
+    justify-self: end;
+} */
 .section1-pic{
     width: 1163px;
     height: 697px;
 }
 @media screen and (max-width: 700px) {
+   
+    .section1-pic{
+        height: 283px;
+    }
     
     .landingPageTitle {
         font-size: 32px;
@@ -133,4 +140,9 @@
        
 }
 
+@media screen and (max-width: 1280px) {
+    .section1-container{
+        grid-template-columns: auto;
+    }
+}
 

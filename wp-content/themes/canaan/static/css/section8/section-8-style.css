@@ -6,6 +6,14 @@
     line-height: 26px;
     margin-right: 10px;
 }
+.lp_sec8_form-message-text{
+    opacity: 0.8;
+    color: #FFFFFF;
+    font-size: 72px;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-right: 10px;
+}
 
 .lp_section8{
     display: flex;
@@ -135,6 +143,32 @@
     overflow: hidden;
   }
 
+  .section8-form-message{
+      display: none;
+  }
+  .lp_se8_big_ball{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(127.29deg, #FB9773 0%, #FFC1AA 100%);
+    position: absolute;
+    bottom: -61px;
+    left: -66px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.lp_sec8_small_ball{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(127.29deg, #FB9773 0%, #FFC1AA 100%);
+    position: absolute;
+    right: 6%;
+    top: 38%;
+    opacity: 0.6;
+
+}
+
   @media screen and (max-width: 700px) {
 
     .lp_section8{
@@ -164,16 +198,7 @@
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
-    .lp_se8_big_ball{
-        width: 200px;
-        height: 200px;
-        background-color: white;
-        position: absolute;
-        bottom: -61px;
-        left: -66px;
-        opacity: 0.2;
-        border-radius: 50%;
-    }
+    
 
     .lp_sec8_checkbox{
         margin-left: 0px;
@@ -183,4 +208,11 @@
     
     
        
+}
+
+@media screen and (max-width: 1000px) {
+
+    .lp_sec8_form-message-text{
+        font-size: 35px;
+    }
 }

@@ -18,7 +18,7 @@ $mainObj = new canaan_post($post);
     ?>
     <?php get_template_part('parts/ga-tracking'); ?>
     <?php get_template_part('parts/font-loader'); ?>
-    
+
     <script>
         var __mainData = {
             nonce: '<?php echo wp_create_nonce('register_user'); ?>',
@@ -30,14 +30,18 @@ $mainObj = new canaan_post($post);
             postsPerPage: <?php echo get_option('posts_per_page'); ?>,
             offset: <?php echo get_option('posts_per_page'); ?>,
         }
-        
+
         function navbarfunction() {
-            var x = document.getElementById("smalllinks");
-            if (x.className === "small_hd_navlinks") {
-                x.className = "ssm";
-            } else {
-                x.className = "small_hd_navlinks";
-            }
+            document.getElementById("myNav").style.width = "60%";
+            document.querySelector(".close-slide-btn").style.display = "block";
+            document.querySelector(".sitcky-footer").style.filter = "blur(8px)";
+            document.querySelector(".sitcky-footer").style.backgroundColor = "#948f8f";
+            // var x = document.getElementById("smalllinks");
+            // if (x.className === "small_hd_navlinks") {
+            //     x.className = "ssm";
+            // } else {
+            //     x.className = "small_hd_navlinks";
+            // }
             // var x = document.getElementById("smalllinks");
             // if (x.className === "topnav") {
             //     x.className += " responsive";
@@ -45,54 +49,87 @@ $mainObj = new canaan_post($post);
             //     x.className = "topnav";
             // }
         }
-        </script>
 
-<meta charset="<?php bloginfo('charset'); ?>" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="generator" content="Naaman Frenkel using WordPress">
-<title><?php wp_title('|', true, 'right'); ?></title>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.querySelector(".close-slide-btn").style.display = "none";
+            document.querySelector(".sitcky-footer").style.filter = "none";
+            document.querySelector(".sitcky-footer").style.backgroundColor = "inherit";
+        }
+    </script>
 
-<script src="jquery-3.5.1.min.js"></script>
+    <meta charset="<?php bloginfo('charset'); ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Naaman Frenkel using WordPress">
+    <title><?php wp_title('|', true, 'right'); ?></title>
+
+    <script src="jquery-3.5.1.min.js"></script>
     <?php
     wp_head();
     ?>
 </head>
 
 <body <?php body_class(); ?>>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn close-slide-btn" id="close-slide-btn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content pt-14">
+            <div class="slidepop-navlinks text-center">
+                <?php
+
+                // $links = carbon_get_page_meta('page-homenavlinks');
+                $links = carbon_get_the_post_meta('page-homenavlinks');
+
+                foreach ($links as $value) {
+                    # code...
+                    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center block px-2 py-2"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                }
+                ?>
+            </div>
+            <div class="slidepop-navlinks text-center">
+                <?php
+                $header_links = canaan_get_menu_array('primary');
+                foreach ($header_links as $key => $value) {
+                    # code...
+                    echo '<a class="font-bold landPageTopBarSignUp-slidepop px-2 py-2 block main_links lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';
+                }
+                ?>
+
+            </div>
+        </div>
+    </div>
     <div id="app">
         <div class="sitcky-footer">
-            <header>
+            <header class="pt-9 pb-20">
                 <nav class="topnav" id="myTopnav">
 
-                        <a href="javascript:void(0);" style="font-size: 35px;" class="icon col-start-6" onclick="navbarfunction()">&#9776;</a>
-                    
+                    <a href="javascript:void(0);" style="font-size: 35px;" class="icon col-start-6" onclick="navbarfunction()">&#9776;</a>
+
                     <div class="topbar_right_icon ">
                         <img class="lp_header_img" src="<?php echo get_template_directory_uri() . '/static/images/logo.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-                        
+
                     </div>
                     <!-- <div class="topBarMiddle justify-between my-auto"> -->
+                    <?php
+
+                    // $links = carbon_get_page_meta('page-homenavlinks');
+                    $links = carbon_get_the_post_meta('page-homenavlinks');
+
+                    foreach ($links as $value) {
+                        # code...
+                        echo '<a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                    }
+                    ?>
+
+                    <div class="small_hd_navlinks" id="smalllinks">
                         <?php
-
-                        // $links = carbon_get_page_meta('page-homenavlinks');
-                        $links = carbon_get_the_post_meta('page-homenavlinks');
-                        
-                        foreach ($links as $value) {
-                            # code...
-                            echo '<a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
-                        }
-                        ?>
-
-                        <div class="small_hd_navlinks" id="smalllinks">
-                            <?php
                         foreach ($links as $value) {
                             # code...
                             echo '<a class="px-4 topBarFontSize lp_header_middle text-left"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
-                        
                         }
-                        
+
                         ?>
-                        </div>
+                    </div>
 
 
                     <!-- </div> -->
@@ -102,7 +139,7 @@ $mainObj = new canaan_post($post);
                         // $header_links = carbon_get_the_post_meta('page-homeheader_signup');
                         // $header_links = carbon_get_the_post_meta('page-homeheader_register');
                         $header_links = canaan_get_menu_array('primary');
-                
+
                         // // ];
                         foreach ($header_links as $key => $value) {
                             # code...
@@ -115,3 +152,5 @@ $mainObj = new canaan_post($post);
                 </nav>
 
             </header>
+
+           

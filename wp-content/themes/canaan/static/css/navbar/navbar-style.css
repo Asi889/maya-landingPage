@@ -10,10 +10,7 @@
     display: none;
 }
 
-.topbar_right_icon{
-    height: 100px;
-    width: 100px;
-}
+
 
 .landPageTopBarSignUp{
     height: 42px;
@@ -21,18 +18,38 @@
     font-size: 25px;
     color: #999999;
 }
+.landPageTopBarSignUp-slidepop{
+    height: 42px;
+    text-align: center;
+    font-size: 25px;
+    color: #999999;
+    /* display: inline; */
+}
+.landPageTopBarSignUp-slidepop:hover{
+    font-size: 25px;
+    border-radius: 6px;
+    border: 1px solid #313131;
+}
 
 .landPageTopBarSignUp:hover{
     font-size: 25px;
-    color: #FFFFFF;
     border-radius: 6px;
-    background-color: #FB9773;
+    border: 1px solid #313131;
+    
 
 }
 
 .topBarFontSize{
     font-size: 25px;
     color: #999999;
+}
+.topBarFontSize-slidepop-top{
+    font-size: 25px;
+    color: #999999;
+}
+.topBarFontSize-slidepop-top:hover{
+    color: #3C91A0 ;
+    font-weight: 800;
 }
 
 .topBarFontSize:hover{
@@ -54,11 +71,15 @@
     display: grid;
     /* display: none; */
     position: absolute;
-    left: 0;
-    top: 122px;
+    left: 5px;
+    top: 79px;
 }
 
 @media screen and (max-width: 700px) {
+    .topbar_right_icon{
+        height: 100px;
+        width: 100px;
+    }
     .topBarFontSize{
         font-size: 15px;
     }
@@ -67,5 +88,20 @@
         grid-auto-flow: column;
         align-items: center;
     }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .topbar_right_icon{
+        height: 100px;
+        width: 100px;
+    }
+
+    .topnav{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
 }
 

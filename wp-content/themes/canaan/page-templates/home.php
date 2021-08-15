@@ -16,7 +16,8 @@ $mainObj = new canaan_post($post);
 
 get_header();
 ?>
-<main >
+<main  >
+
 <!-- <main class="col-1-1"> -->
 
 
@@ -26,16 +27,20 @@ get_header();
 
     </div>
 
-    <div class="section_2 mb-16">
-
+    <div class="section_2 ">
+        <div class="section2-grid-small-screen">
         <?php
-        //  include_once(dirname(__FILE__) . '/landingpage/section2.php'); 
+         include_once(dirname(__FILE__) . '/landingpage/section2.php'); 
          ?>
+        </div>
 
-        <?php 
-        include_once(dirname(__FILE__) . '/landingpage/section2-swiper.php'); 
-        ?>
-        <div class="section2-media-bigball"></div>
+            <div class="section2-swiper-small-screen">
+
+                <?php 
+                include_once(dirname(__FILE__) . '/landingpage/section2-swiper.php'); 
+                ?>
+                <div class="section2-media-bigball"></div>
+            </div>
     </div>
 
     <!-- <div id="section-3" class="section3  bg-topBarColor"> -->
@@ -76,8 +81,9 @@ get_header();
     </div>
 
     <!-- <div id="section-8" class=" bg-mainOrange w-bbc" > -->
-
+<!-- <div class="section8-form"> -->
     <?php include_once(dirname(__FILE__) . '/landingpage/section8.php'); ?>
+<!-- </div> -->
 
     <!-- </div> -->
 

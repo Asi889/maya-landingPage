@@ -32,8 +32,6 @@ define('DB_USER', $_ENV['DB_USER']);
 define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 define('DB_HOST', $_ENV['DB_HOST']);
 
-define('WP_SITEURL', 'http://maia-landing-page.test');
-define('WP_HOME', 'http://maia-landing-page.test');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

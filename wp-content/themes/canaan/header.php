@@ -51,31 +51,6 @@ $mainObj = new canaan_post($post);
             offset: <?php echo get_option('posts_per_page'); ?>,
         }
 
-        function navbarfunction() {
-            document.getElementById("myNav").style.width = "60%";
-            document.querySelector(".close-slide-btn").style.display = "block";
-            document.querySelector(".sitcky-footer").style.filter = "blur(8px)";
-            document.querySelector(".sitcky-footer").style.backgroundColor = "#948f8f";
-            // var x = document.getElementById("smalllinks");
-            // if (x.className === "small_hd_navlinks") {
-            //     x.className = "ssm";
-            // } else {
-            //     x.className = "small_hd_navlinks";
-            // }
-            // var x = document.getElementById("smalllinks");
-            // if (x.className === "topnav") {
-            //     x.className += " responsive";
-            // } else {
-            //     x.className = "topnav";
-            // }
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-            document.querySelector(".close-slide-btn").style.display = "none";
-            document.querySelector(".sitcky-footer").style.filter = "none";
-            document.querySelector(".sitcky-footer").style.backgroundColor = "inherit";
-        }
     </script>
 
     <meta charset="<?php bloginfo('charset'); ?>" />
@@ -84,7 +59,6 @@ $mainObj = new canaan_post($post);
     <meta name="generator" content="Naaman Frenkel using WordPress">
     <title><?php wp_title('|', true, 'right'); ?></title>
 
-    <script src="jquery-3.5.1.min.js"></script>
     <?php
     wp_head();
     ?>
@@ -92,7 +66,7 @@ $mainObj = new canaan_post($post);
 
 <body <?php body_class(); ?>>
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn close-slide-btn" id="close-slide-btn" onclick="closeNav()">&times;</a>
+        <button  class="closebtn close-slide-btn closeNav-js" id="close-slide-btn">&times;</button>
         <div class="overlay-content pt-14">
             <div class="slidepop-navlinks text-center">
                 <?php
@@ -125,7 +99,7 @@ foreach ($links as $value) {
             <header class=" pb-24">
                 <nav class="topnav" id="myTopnav">
 
-                    <a href="javascript:void(0);" style="font-size: 35px;" class="icon col-start-6" onclick="navbarfunction()">&#9776;</a>
+                    <button style="font-size: 35px;" class="icon col-start-6 toglle-nav-js">&#9776;</button>
 
                     <!-- <div class="topbar_right_icon "> -->
                     <img class="lp_header_img" src="<?php echo get_template_directory_uri() . '/static/images/logo.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">

@@ -1,7 +1,6 @@
 
 
 export const formfunction = function (form) {
-    console.log(form);
     let box = document.querySelector('.message_box');
     const formWrapper = document.querySelector('.lp_section8');
     const formMessage = document.querySelector('.section8-form-message');
@@ -20,7 +19,6 @@ export const formfunction = function (form) {
             const element = form.elements[index];
             form_data[element.name] = element.value
         }
-        console.log(form_data);
         fetch(__mainData.ajaxUrl, {
             method: 'POST',
             body: new URLSearchParams(form_data),
@@ -38,11 +36,8 @@ export const formfunction = function (form) {
             formMessage.style.display = 'block';
             // box.innerHTML = '<h2 class="text-2xl">ההודעה נשלחה בהצלחה, תודה</h2>'
             // box.innerHTML = '<div class="section8-form-message"><h1 class="lp-section8-title my-5">ההודעה נשלחה בצלחה!</h1><p class="lp_sec8_form-message-text">תודה שפניתם אלינו</p></div>'
-            console.log(data);
         }).catch(function (error) {
 
-
-            console.warn(error);
         });
 
 

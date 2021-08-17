@@ -44,8 +44,8 @@ function canaan_init()
     if (is_admin() ||  'wp-login.php' === $pagenow) {
         return;
     }
-    wp_dequeue_script('jquery');
-    wp_deregister_script('jquery');
+    // wp_dequeue_script('jquery');
+    // wp_deregister_script('jquery');
 }
 
 
@@ -135,3 +135,14 @@ function vite_enqueue_script()
 }
 
 add_action('wp_enqueue_scripts', 'vite_enqueue_script');
+
+add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
+function add_type_attribute($tag, $handle, $src) {
+    // if not your script, do nothing and return original $tag
+    if ( 'canaan' === $handle ) {
+        $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+        return $tag;
+    }
+    return $tag;
+    // change the script tag by adding type="module" and return it.
+}

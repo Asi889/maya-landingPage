@@ -1,4 +1,5 @@
 import 'vite/dynamic-import-polyfill'
+
 import '../css/tailwind.css';
 import '../css/cmp.css';
 import '../css/section1/section-1-style.css';
@@ -32,6 +33,24 @@ window.addEventListener('load', function () {
   );
   // start observing a DOM node
   resizeObserver.observe(document.body);
+
+
+   function navbarfunction() {
+            document.getElementById("myNav").style.width = "60%";
+            document.querySelector(".close-slide-btn").style.display = "block";
+            document.querySelector(".sitcky-footer").style.filter = "blur(8px)";
+            document.querySelector(".sitcky-footer").style.backgroundColor = "#948f8f";
+        
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.querySelector(".close-slide-btn").style.display = "none";
+            document.querySelector(".sitcky-footer").style.filter = "none";
+            document.querySelector(".sitcky-footer").style.backgroundColor = "inherit";
+        }
+        document.querySelector('.toglle-nav-js').addEventListener('click',navbarfunction)
+        document.querySelector('.closeNav-js').addEventListener('click',closeNav)
 
 });
 
@@ -121,7 +140,6 @@ window.addEventListener('load', function() {
 
 const spyScrolling = ( ) => {
   const sections = document.querySelectorAll( '.have-link-js' );
-  console.log(sections)
   
   window.onscroll = ( ) => {
     const scrollPos = document.body.scrollTop;

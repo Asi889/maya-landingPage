@@ -1,13 +1,13 @@
 {
   "wp-content/themes/canaan/static/js/main.js": {
-    "file": "assets/main.16d17e99.js",
+    "file": "assets/main.e71afcc3.js",
     "src": "wp-content/themes/canaan/static/js/main.js",
     "isEntry": true,
     "imports": [
       "_vendor.7507a2f8.js"
     ],
     "css": [
-      "assets/main.809537f7.css"
+      "assets/main.da6282af.css"
     ]
   },
   "_vendor.7507a2f8.js": {

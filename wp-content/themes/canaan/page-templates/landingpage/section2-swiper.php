@@ -5,7 +5,7 @@
 
 
 <div class="swiper-container w-80   section2-swiper">
-    <div class="section2-media-smallball"></div>
+    <!-- <div class="section2-media-smallball"></div> -->
     
     <h1 class="section2-media-title ">למי זה מתאים?</h1>
     <!-- Additional required wrapper -->

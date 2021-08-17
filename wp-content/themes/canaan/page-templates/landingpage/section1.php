@@ -67,7 +67,7 @@
 
             <?php
             $lp_firstPage_button = [
-                ['href' => '#', 'text' => 'להרשמה'],
+                ['href' => 'https://am-maya.com/user/signup', 'text' => 'להרשמה'],
             ];
             foreach ($lp_firstPage_button as $key => $value) {
                 # code...
@@ -83,15 +83,15 @@
 
         <div class="parallax">
             <div class="parallax-layer parallax-layer__1" data-parallax-disallow="y" data-parallax-deep="1000">
-                <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic1.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                <img class="layer layer1-img" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic1.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
 
 
                 <div class="parallax-layer parallax-layer__2" data-parallax-deep="40">
-                    <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic2.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                    <img class="layer layer2-img" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic2.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
                 </div>
                 <div class="parallax-layer parallax-layer__3" data-parallax-deep="100">
-                    <img class="layer" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic3.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                    <img class="layer layer3-img" data-speed="-5" src="<?php echo get_template_directory_uri() . '/static/images/paralax-pic3.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
                 </div>
             </div>
         </div>

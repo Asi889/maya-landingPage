@@ -167,6 +167,12 @@
     top: 38%;
     opacity: 0.6;
 
+    /* ////////////////// */
+
+    /* position: sticky;
+    bottom: 186px;
+    right: 54px; */
+
 }
 
   @media screen and (max-width: 700px) {
@@ -215,4 +221,11 @@
     .lp_sec8_form-message-text{
         font-size: 35px;
     }
+}
+
+@media screen and (max-width: 1500px) {
+    .lp_sec8_small_ball{
+        top: 5%;
+    }
+
 }

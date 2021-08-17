@@ -79,3 +79,88 @@ function Parallax(options) {
 window.addEventListener('load', function() {
   new Parallax();
 });
+
+// console.log("yellooooooo");
+
+
+
+// (function() {
+//   // 'use strict';
+//   let a= document.getElementsByClassName('scroll-header-links');
+//         console.log(a);
+
+//   var section = document.querySelectorAll(".sections");
+//   var sections = {};
+//   var i = 0;
+
+//   Array.prototype.forEach.call(section, function(e) {
+//     sections[e.id] = e.offsetTop;
+//   });
+//   console.log("hehehehehhe");
+//   var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+//   console.log(scrollPosition);
+//   window.onscroll = function() {
+//     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+//     // console.log(scrollPosition);
+
+//     for (i in sections) {
+//       if (sections[i] <= scrollPosition) {
+//         let a= document.getElementsByClassName('scroll-header-links');
+//         console.log(a);
+//         a.setAttribute('class', ' ');
+//         let b = document.getElementsByClassName('hd_navlinks')
+//         b.href += i ;
+//         b.setAttribute('class', 'scroll-header-links');
+
+//         // let b = document.querySelector('a[href*=' + i + ']')
+//         // b.setAttribute('class', 'scroll-header-links');
+//       }
+//     }
+//   };
+// })();
+
+const spyScrolling = ( ) => {
+  const sections = document.querySelectorAll( '.have-link-js' );
+  console.log(sections)
+  
+  window.onscroll = ( ) => {
+    const scrollPos = document.body.scrollTop;
+    // if(scrollPos >= 580){
+    //   console.log("at section 2");
+    // }
+    // console.log(scrollPos);
+    sections.forEach(section =>{
+
+      if ( isInViewport(section) ) {
+        
+        const id = section.id;
+        if(id){
+          document.querySelector( `a[href*=${ id }` ).classList.add( 'active' );
+
+        }
+        //   document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );if
+        //   document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
+        }
+    })
+
+  //   for ( let s in sections )
+  //   if (sections[s] && isInViewport(sections[s]) ) {
+  //     // const id = sections[s].id;
+  //     //   document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );
+  //     //   document.querySelector( `a[href*=${ id }]` )?.parentNode.classList.add( 'active' );
+  //     //   document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
+  //     }
+  } 
+}
+
+spyScrolling( );
+var isInViewport = function (elem) {
+
+  var bounding = elem.getBoundingClientRect();
+  return (
+      bounding.top >= 0 &&
+      bounding.left >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};

@@ -19,6 +19,26 @@ $mainObj = new canaan_post($post);
     <?php get_template_part('parts/ga-tracking'); ?>
     <?php get_template_part('parts/font-loader'); ?>
 
+    <!-- //////////// favicon ///////////////// -->
+      <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() . '/static/images/favicon/napple-touch-icon.png'; ?>" />
+      <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() . '/static/images/favicon/favicon-32x32.png'; ?> " />
+      <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() . '/static/images/favicon/favicon-16x16.png'; ?>" />
+      <link rel="manifest" href="<?php echo get_template_directory_uri() . '/static/images/favicon/site.webmanifest'; ?>" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+    <!-- //////////////////////////////////////////////////// -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50437388-2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-50437388-2');
+    </script>
+
     <script>
         var __mainData = {
             nonce: '<?php echo wp_create_nonce('register_user'); ?>',
@@ -77,16 +97,18 @@ $mainObj = new canaan_post($post);
             <div class="slidepop-navlinks text-center">
                 <?php
 
-                // $links = carbon_get_page_meta('page-homenavlinks');
-                $links = carbon_get_the_post_meta('page-homenavlinks');
+// $links = carbon_get_page_meta('page-homenavlinks');
+$links = carbon_get_the_post_meta('page-homenavlinks');
 
-                foreach ($links as $value) {
-                    # code...
-                    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center block px-2 py-2"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
-                }
-                ?>
+foreach ($links as $value) {
+    # code...
+    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center block px-2 py-2"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+}
+?>
             </div>
-            <div class="slidepop-navlinks text-center">
+            <div class="slidepop-navlinks self-center text-center">
+                
+                <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
                 <?php
                 $header_links = canaan_get_menu_array('primary');
                 foreach ($header_links as $key => $value) {
@@ -100,26 +122,33 @@ $mainObj = new canaan_post($post);
     </div>
     <div id="app">
         <div class="sitcky-footer">
-            <header class="pt-9 pb-20">
+            <header class=" pb-24">
                 <nav class="topnav" id="myTopnav">
 
                     <a href="javascript:void(0);" style="font-size: 35px;" class="icon col-start-6" onclick="navbarfunction()">&#9776;</a>
 
-                    <div class="topbar_right_icon ">
-                        <img class="lp_header_img" src="<?php echo get_template_directory_uri() . '/static/images/logo.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                    <!-- <div class="topbar_right_icon "> -->
+                    <img class="lp_header_img" src="<?php echo get_template_directory_uri() . '/static/images/logo.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
+                    <!-- </div> -->
+
+
+
+
+                    <div class="lp_nav_middle_links">
+                        <!-- <?php
+                                $links = carbon_get_the_post_meta('page-homenavlinks');
+                                foreach ($links as $value) {
+                                    # code...
+                                    echo '<a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                                }
+                                ?> -->
+                        <a id="firstlink" class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks zzt scroll-header-links" href="#section-1">ראשי</a>
+                        <a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks" href="#section-2">מה במוצר</a>
+                        <a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks" href="#section-3">יצירת קשר</a>
+                        <img class="" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
                     </div>
-                    <!-- <div class="topBarMiddle justify-between my-auto"> -->
-                    <?php
 
-                    // $links = carbon_get_page_meta('page-homenavlinks');
-                    $links = carbon_get_the_post_meta('page-homenavlinks');
-
-                    foreach ($links as $value) {
-                        # code...
-                        echo '<a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
-                    }
-                    ?>
 
                     <div class="small_hd_navlinks" id="smalllinks">
                         <?php
@@ -152,5 +181,3 @@ $mainObj = new canaan_post($post);
                 </nav>
 
             </header>
-
-           

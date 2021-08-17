@@ -85,8 +85,38 @@
     width: 1163px;
     height: 697px;
 }
+.layer1-img{
+   margin-top: 54px;
+}
+.layer2-img{
+    max-height: 544px;
+    padding-top: 24px;
+    position: relative;
+    top: 88px;
+    right: 133px;
+}
+.layer3-img{
+    position: relative;
+    max-height: 327px;
+    top: 188px;
+    left: 470px;
+}
+.section-1{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
 @media screen and (max-width: 700px) {
-   
+    .layer1-img{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .layer2-img{
+     display: none;   
+    }
+    .layer3-img{
+        top: 39px;
+        left: 2px;
+    }
     .section1-pic{
         height: 283px;
     }

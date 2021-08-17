@@ -3,19 +3,20 @@
 
 ?>
 
-<div class="section2_title pt-10 ">
+<div class="section2_title pt-20 ">
     <?php
     $lp_firstPage_button = [
         ['href' => '#', 'text' => 'למי זה מתאים?'],
     ];
     foreach ($lp_firstPage_button as $key => $value) {
         # code...
-        echo '<h1 class="lp-section2-title mx-auto my-24" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
+        echo '<h1 class="lp-section2-title mx-auto mb-24" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
     }
     ?>
 </div>
 
 <div class="section2_body section2_body_width ">
+
 
     <div class="lp-section2-button white-eye-wrapper relative">
         <img class="white-eye" src="<?php echo get_template_directory_uri() . '/static/images/whiteeye.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">

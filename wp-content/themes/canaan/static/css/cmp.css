@@ -3,7 +3,9 @@
     font-family: 'Assistant';
 } */
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .swiper-slide {
     font-size: 18px;
@@ -46,6 +48,8 @@
 
 
 
+
+
 @media screen and (max-width: 1000px) {
     /* .topnav a {
         display: none;
@@ -68,14 +72,7 @@
       margin-right: 20px;
       padding-left: 8px;
     }
-    .lp_header_img{
-        position: absolute;
-        top: 14px;
-        width: 103px;
-        height: 47px;
-
-        /* left: 0px; */
-    }
+    
     .lp_firstPageText_1{
          /* height: 226.13px; */
         width: auto;

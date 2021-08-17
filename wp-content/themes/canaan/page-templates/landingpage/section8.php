@@ -4,7 +4,7 @@
 
 ?>
 <form action="" name='form' class="lp_form-js" method="POST">
-    <div id="section-8" class="">
+    <div name="section-3" id="section-8" class=" sections">
         <div class="sec8-form lp_section8   bg-mainOrange">
 
 
@@ -56,9 +56,9 @@
         </div>
 
 
+        <div class="lp_sec8_small_ball"></div>
     </div>
     <div class="lp_se8_big_ball"></div>
-    <div class="lp_sec8_small_ball"></div>
 </form>
 
 <div>

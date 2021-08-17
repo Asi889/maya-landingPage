@@ -1,9 +1,36 @@
 .topnav{
+
+
+    /* ///// */
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    z-index: 90;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    /* ///////// */
     /* display: grid; */
     grid-auto-flow: column;
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+.lp_header_img{
+    width: 193px;
+    height: 87px;
+    margin-bottom: 5px;
+
+}
+
+.lp_nav_middle_links{
+    display: flex;
+    gap: 88px;
+    align-items: center;
+}
+.wheelchair-logo{
+    position: relative;
+    left: 30px;
 }
 
 .topnav .icon {
@@ -29,12 +56,14 @@
     font-size: 25px;
     border-radius: 6px;
     border: 1px solid #313131;
+   
 }
 
 .landPageTopBarSignUp:hover{
     font-size: 25px;
     border-radius: 6px;
     border: 1px solid #313131;
+    color: #313131;
     
 
 }
@@ -52,6 +81,12 @@
     font-weight: 800;
 }
 
+.scroll-header-links{
+    color: #3C91A0 ;
+    font-weight: 800;
+}
+
+.topBarFontSize.active,
 .topBarFontSize:hover{
     color: #3C91A0 ;
     font-weight: 800;
@@ -76,6 +111,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .wheelchair-logo{
+        display: none;
+    }
     .topbar_right_icon{
         height: 100px;
         width: 100px;
@@ -101,6 +139,14 @@
         display: grid;
         grid-auto-flow: column;
         align-items: center;
+    }
+    .lp_header_img{
+        position: initial;
+        top: 14px;
+        width: 103px;
+        height: 47px;
+
+        /* left: 0px; */
     }
 
 }

@@ -8,43 +8,36 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
 ?>
 
 
-<div class="swiper-container sec7-swiper logo-swiper-container">
+<div class="swiper-container sec7-swiper my-8 logo-swiper-container">
     <!-- Additional required wrapper -->
 
-    <div class="swiper-button-prev"></div>
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-            <?php
-            $lp_firstPageSubtitle = [
-                ['href' => '#', 'text' => ' מאיה, היועצת שתעזור לך לבחור נכון'],
-            ];
-            foreach ($lp_firstPageSubtitle as $key => $value) {
-                # code...
-                echo '<h1 class="font-bold landingPageTitle" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
-            }
-            ?>
-
-            <?php
-            $first_slide_text = [
-                ['href' => '#', 'text' => 'בפלטפורמה היחידה שמשלבת אבחון מקצועית, ייעוץ<br> תעבוקתי והשמה'],
-            ];
-            foreach ($first_slide_text as $key => $value) {
-                # code...
-                echo '<p class="text-landingpage_section3sm_text text-landingpage_section3darkgrey" href="' . $value['href'] . '" >' . $value['text'] . '</p>';
-            }
-            ?>
-
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/thor.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+        <div class="swiper-slide">
+            <img class="logoo" src="<?php echo get_template_directory_uri() . '/static/images/wolvereen.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <div class="swiper-slide">
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/wonderwomen.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <div class="swiper-slide">
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/superman.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <div class="swiper-slide">
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/hulk.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <div class="swiper-slide">
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/spider-man.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <div class="swiper-slide">
+            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/ironman.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+      
     </div>
     <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-next"></div>
-
+    
     <!-- If we need navigation buttons -->
 
 </div>

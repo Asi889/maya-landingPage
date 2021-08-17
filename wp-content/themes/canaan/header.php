@@ -108,7 +108,7 @@ foreach ($links as $value) {
             </div>
             <div class="slidepop-navlinks self-center text-center">
                 
-                <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                <!-- <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>"> -->
                 <?php
                 $header_links = canaan_get_menu_array('primary');
                 foreach ($header_links as $key => $value) {
@@ -146,7 +146,7 @@ foreach ($links as $value) {
                         <a id="firstlink" class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks zzt scroll-header-links" href="#section-1">ראשי</a>
                         <a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks" href="#section-2">מה במוצר</a>
                         <a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks" href="#section-3">יצירת קשר</a>
-                        <img class="" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                        <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
                     </div>
 
 

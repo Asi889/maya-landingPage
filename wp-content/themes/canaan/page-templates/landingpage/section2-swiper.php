@@ -66,8 +66,7 @@
         
         
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+
 
     <div uniqueNavElements class="swiper-button-next swiper-button-next-section2"></div>
 

@@ -3,13 +3,11 @@
 ?>
 
 
-<div class="section3_container  mt-28 mb-28">
+<div class="section3_container  mt-40 mb-28">
 
-    <div class="section_3_right mt-20">
+    <div class="section_3_right mt-20 pr-24">
 
-        <!-- <div class="max-w-sec3_rightwidth mx-auto"> -->
-            <?php include_once(dirname(__FILE__) . '/swiper.php'); ?>
-        <!-- </div> -->
+            <?php include_once(dirname(__FILE__) . '/sec3swiper.php'); ?>
     </div>
 
     <div class="section_3_left">

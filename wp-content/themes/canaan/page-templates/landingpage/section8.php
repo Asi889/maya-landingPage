@@ -4,7 +4,7 @@
 
 ?>
 <form action="" name='form' class="lp_form-js" method="POST">
-    <div name="section-3" id="section-8" class=" sections">
+    <div name="section-3" class=" sections">
         <div class="sec8-form lp_section8   bg-mainOrange">
 
 
@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="text-mainWhite flex items-center">
-                        <input id="input2" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="eployer">
+                        <input id="input2" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="employer">
                         <label for="input2" class="lp_sec8_text">מעסיק</label>
                     </div>
                 </div>

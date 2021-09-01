@@ -12,8 +12,21 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
     <!-- Additional required wrapper -->
 
     <div class="swiper-wrapper">
+
+        <?php
+            $images = carbon_get_the_post_meta('page-homesection7_logos');
+            foreach ($images as $key => $value) {
+         
+                # code...
+                echo '<div class="swiper-slide ssswiper">';
+                echo get_img_html($value['image']);
+                echo '</div>';
+            }
+
+
+        ?>
         <!-- Slides -->
-        <div class="swiper-slide">
+        <!-- <div class="swiper-slide">
             <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/thor.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
         </div>
         <div class="swiper-slide">
@@ -33,11 +46,8 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
         </div>
         <div class="swiper-slide">
             <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/ironman.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-      
+        </div> -->
+
     </div>
-    <!-- If we need pagination -->
-    
-    <!-- If we need navigation buttons -->
 
 </div>

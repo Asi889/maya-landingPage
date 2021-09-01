@@ -99,47 +99,20 @@ window.addEventListener('load', function() {
   new Parallax();
 });
 
-// console.log("yellooooooo");
 
+var isInViewport = function (elem) {
 
-
-// (function() {
-//   // 'use strict';
-//   let a= document.getElementsByClassName('scroll-header-links');
-//         console.log(a);
-
-//   var section = document.querySelectorAll(".sections");
-//   var sections = {};
-//   var i = 0;
-
-//   Array.prototype.forEach.call(section, function(e) {
-//     sections[e.id] = e.offsetTop;
-//   });
-//   console.log("hehehehehhe");
-//   var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-//   console.log(scrollPosition);
-//   window.onscroll = function() {
-//     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-//     // console.log(scrollPosition);
-
-//     for (i in sections) {
-//       if (sections[i] <= scrollPosition) {
-//         let a= document.getElementsByClassName('scroll-header-links');
-//         console.log(a);
-//         a.setAttribute('class', ' ');
-//         let b = document.getElementsByClassName('hd_navlinks')
-//         b.href += i ;
-//         b.setAttribute('class', 'scroll-header-links');
-
-//         // let b = document.querySelector('a[href*=' + i + ']')
-//         // b.setAttribute('class', 'scroll-header-links');
-//       }
-//     }
-//   };
-// })();
+  var bounding = elem.getBoundingClientRect();
+  return (
+      bounding.top >= 0 &&
+      bounding.left >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 
 const spyScrolling = ( ) => {
-  const sections = document.querySelectorAll( '.have-link-js' );
+  const sections = document.querySelectorAll( '.navlinks' );
   
   window.onscroll = ( ) => {
     const scrollPos = document.body.scrollTop;
@@ -150,14 +123,15 @@ const spyScrolling = ( ) => {
     sections.forEach(section =>{
 
       if ( isInViewport(section) ) {
+        console.log("gigi");
         
         const id = section.id;
         if(id){
           document.querySelector( `a[href*=${ id }` ).classList.add( 'active' );
 
         }
-        //   document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );if
-        //   document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
+          // document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );
+          // document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
         }
     })
 
@@ -171,14 +145,43 @@ const spyScrolling = ( ) => {
   } 
 }
 
-spyScrolling( );
-var isInViewport = function (elem) {
+// spyScrolling( );
 
-  var bounding = elem.getBoundingClientRect();
-  return (
-      bounding.top >= 0 &&
-      bounding.left >= 0 &&
-      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+const spyScrolling1 = ( ) => {
+  const sections = document.querySelectorAll( '.sections' );
+
+  window.onscroll = ( ) => {
+    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for ( let s in sections )
+      if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+        const id = sections[ s ].id;
+        console.log(id);
+        document.querySelector( '.scroll-header-links' ).remove( 'scroll-header-links' );
+        document.querySelector( `a[href*=${ id }]` ).add( 'scroll-header-links' );
+      }
+  }  
+}
+// spyScrolling1();
+
+///////////////////////////////////////
+
+window.onscroll = (()=> {
+  let mainSection = document.querySelectorAll('.sections');
+  console.log(mainSection);
+
+  mainSection.forEach((v,i)=> {
+    let rect = v.getBoundingClientRect().y
+    if(rect < window.innerHeight-200){
+      menuSection.forEach(v=> v.classList.remove('scroll-header-links'))
+      menuSection[i].classList.add('scroll-header-links')
+    }else{
+      console.log("buho");
+    }
+  })
+})
+

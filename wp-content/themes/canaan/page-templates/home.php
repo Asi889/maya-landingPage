@@ -18,16 +18,13 @@ get_header();
 ?>
 <main>
 
-    <!-- <main class="col-1-1"> -->
-
-
-    <div name="section-1" id="section-1" class="section-1 sections  have-link-js">
+    <div name="section-1" id="section-1" class="section-1 sections nave-link-js">
         <!-- <?php get_header();  ?> -->
         <?php include_once(dirname(__FILE__) . '/landingpage/section1.php'); ?>
 
     </div>
 
-    <div name="section-2" id="section-2" class="section_2 sections  have-link-js">
+    <div class="section_2">
         <div class="section2-media-smallball"></div>
         <div class="section2-media-bigball"></div>
         <div class="section2-grid-small-screen">
@@ -45,13 +42,13 @@ get_header();
 
     </div>
 
-    <!-- <div id="section-3" class="section3  bg-topBarColor"> -->
+    <div id="section-2" class="section3bg-topBarColor sections">
 
-    <?php
-    // include_once(dirname(__FILE__) . '/landingpage/section3.php');
-    ?>
+        <?php
+        include_once(dirname(__FILE__) . '/landingpage/section3.php');
+        ?>
 
-    <!-- </div> -->
+    </div>
 
     <!-- <div id="section-4"> -->
 
@@ -68,29 +65,25 @@ get_header();
     ?>
 
     <!-- </div> -->
-    
-    <div name="section-2"  class="h-section6_height sections">
+
+    <div class="h-section6_height">
 
         <?php include_once(dirname(__FILE__) . '/landingpage/section6.php'); ?>
 
     </div>
 
 
-    <div name="section-2"  class="sections">
+    <div   class="section7">
 
         <?php include_once(dirname(__FILE__) . '/landingpage/section-7.php'); ?>
 
     </div>
 
-    <!-- <div id="section-8" class=" bg-mainOrange w-bbc" > -->
-    <!-- <div class="section8-form"> -->
-        <div name="section-3" id="section-3" class="sections have-link-js">
+    
+    <div id="section-3" class="sections">
 
-            <?php include_once(dirname(__FILE__) . '/landingpage/section8.php'); ?>
-        </div>
-    <!-- </div> -->
-
-    <!-- </div> -->
+        <?php include_once(dirname(__FILE__) . '/landingpage/section8.php'); ?>
+    </div>
 
 
 

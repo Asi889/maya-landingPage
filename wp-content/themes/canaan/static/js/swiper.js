@@ -1,31 +1,28 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-const section3swiper = new Swiper('.section3-swiper', {
+const sec3swiper= new Swiper('.sec3swiper',{
   // Optional parameters
-  direction: 'horizontal',
-  spaceBetween: 30,
-  loop: true,
-  slidesPerView: 'auto',
+  // cssMode: true,
+  // direction: 'horizontal',
+  // spaceBetween: 30,
+  // loop: true,
+  // slidesPerView: 'auto',
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
+})
+// const section3swiper = new Swiper('.section3-swiper', {
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next-section3',
-    prevEl: '.swiper-button-prev-section3',
-  },
+//   pagination: {
+//     el: '.swiper-pagination'
+//   },
 
   
-
-  // And if we need scrollbar
-  scrollbar: {
-    // el: '.swiper-scrollbar',
-  },
-});
+// });
 
 
 const logoswiper = new Swiper('.logo-swiper-container', {
@@ -34,6 +31,7 @@ const logoswiper = new Swiper('.logo-swiper-container', {
   slidesPerView: '4',
   spaceBetween: 30,
   loop: true,
+
   // If we need pagination
   pagination: {
     // el: '.swiper-pagination',
@@ -66,10 +64,10 @@ const section2swiper = new Swiper('.section2-swiper', {
   slidesPerView: 'auto',
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    // el: '.swiper-pagination',
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   // el: '.swiper-pagination',
+  // },
 
   // Navigation arrows
   navigation: {

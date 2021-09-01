@@ -42,7 +42,17 @@ function crb_attach_page_options()
             ->add_fields( array(
                 Field::make('image', 'image', 'Add Image'),
                 Field::make('text', 'title', 'Insert Text'),
-            ))
+            )),
+        Field::make('complex', "{$prefix}section7_logos", 'logos')
+            ->add_fields( array(
+                Field::make('image', 'image', 'Add logo'),
+            )),
+            Field::make('complex', "{$prefix}section3_slider", 'section3_slider_text')
+            ->add_fields( array(
+                Field::make('text', 'title', 'Insert Title'),
+                Field::make('text', 'text', 'Insert Text'),
+            )),
+            Field::make('text',"{$prefix}youtubelink",'לינק לסרטון')
         ));
         // Field::make('complex', "{$prefix}section2_images", 'אייקונים קטנים')
         //     ->add_fields(array(

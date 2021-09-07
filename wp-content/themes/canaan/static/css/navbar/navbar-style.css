@@ -97,16 +97,14 @@
 .small_hd_navlinks{
     display: none;
     position: absolute;
-        left: 0;
-        top: 122px;
-/* display: grid; */
+    left: 0;
+    top: 122px;
 }
 .smalsize{
     font-size: 15px;
 }
 .ssm{
     display: grid;
-    /* display: none; */
     position: absolute;
     left: 5px;
     top: 79px;
@@ -155,4 +153,11 @@
     }
 
 }
+.overlay-content {
+    padding-top: 50px;
+    display: grid;
+    height: 100%;
+
+  }
+
 

@@ -13,6 +13,9 @@ import '../css/section8/section-8-style.css';
 import '../css/navbar/navbar-style.css';
 import './swiper'
 import { formfunction } from './form';
+// import Swiper from 'swiper';
+// import 'swiper/swiper-bundle.css';
+// Swiper.use([Navigation]);
 
 // import './cross-site/images'
 
@@ -44,13 +47,14 @@ window.addEventListener('load', function () {
         }
 
         function closeNav() {
+          console.log("shoes");
             document.getElementById("myNav").style.width = "0%";
             document.querySelector(".close-slide-btn").style.display = "none";
             document.querySelector(".sitcky-footer").style.filter = "none";
             document.querySelector(".sitcky-footer").style.backgroundColor = "inherit";
         }
-        document.querySelector('.toglle-nav-js').addEventListener('click',navbarfunction)
-        document.querySelector('.closeNav-js').addEventListener('click',closeNav)
+        document.querySelector(".toglle-nav-js").addEventListener('click',navbarfunction)
+        document.querySelector(".closeNav-js").addEventListener('click',closeNav)
 
 });
 
@@ -170,18 +174,19 @@ const spyScrolling1 = ( ) => {
 
 ///////////////////////////////////////
 
-window.onscroll = (()=> {
-  let mainSection = document.querySelectorAll('.sections');
-  console.log(mainSection);
+// window.onscroll = (()=> {
+//   let mainSection = document.querySelectorAll('.sections');
+//   console.log(mainSection);
 
-  mainSection.forEach((v,i)=> {
-    let rect = v.getBoundingClientRect().y
-    if(rect < window.innerHeight-200){
-      menuSection.forEach(v=> v.classList.remove('scroll-header-links'))
-      menuSection[i].classList.add('scroll-header-links')
-    }else{
-      console.log("buho");
-    }
-  })
-})
+//   mainSection.forEach((v,i)=> {
+//     let rect = v.getBoundingClientRect().y
+//     if(rect < window.innerHeight-200){
+//       menuSection.forEach(v=> v.classList.remove('scroll-header-links'))
+//       menuSection[i].classList.add('scroll-header-links')
+//     }else{
+//       console.log("buho");
+//     }
+//   })
+// })
+
 

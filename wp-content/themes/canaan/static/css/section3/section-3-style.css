@@ -11,15 +11,19 @@
 
 
 .section3_container{
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
   }
+  /* .section3bg-topBarColor{
+
+  } */
 
 .section3_right_title{
     height: 42px;
-    width: 139px;
     font-size: 25px;
     color: #999999;
+    padding-right: 63px;
 }
 
 .section3_blue_title{
@@ -31,7 +35,7 @@
   text-align: right;
 }
 .set-right{
-    justify-content: right;
+    justify-content: start;
     align-items: end;
     display: grid;
 }
@@ -42,64 +46,138 @@
     background-color: teal;
 }
 
-@media screen and (max-width: 700px) {
-    
-  .section3_container {
-    display: block;
+.section3-swiper-wrapper{
+    max-width: 800px;
+    padding-right: 60px;
 }
-.section3_right_title{
-    font-size: 18px;
-    line-height: 18px;
-}
-.section3_blue_title{
-    font-size: 28px;
-    line-height: 28px;
-}
-.section3-text{
-    font-size: 18px;
-    line-height: 18px;
-}
-.section_3_right{
-    min-height: 150px;
-}   
-.section3_right_title{
 
+.sec3swiper .swiper-button-prev-section3{
+    font-size: 5px;
+    color: #3C91A0;
+    
+}
+.sec3swiper .swiper-button-next-section3{
+    font-size: 5px;
+    color: #3C91A0;  
+}
+.sec3swiper .swiper-button-prev-section3:after{
+    font-size: 20px;
+   
+}
+.sec3swiper .swiper-button-next-section3:after{
+    font-size: 20px;
+    
 }
 .swiper-button-next-section3{
-    font-size: 20px!important;
-    color: rgb(228, 23, 23);
-    left: -6px!important;
-    /* height: 108px!important; */
+    left: 65px!important;
 }
 .swiper-button-prev-section3{
+    right: -5px!important;
+}
+.section_3_left{
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sec3-swiper-container{
+        height: 100%;
+    }
+    .swiper-button-next-section3{
+        left: 0px!important;
+    }
+    .swiper-button-prev-section3{
+        padding-right: 20px!important;
+    }
+  .section3_container {
+    display: block;
+  }
+  /* .swiper-button-next-section3:after{
+    left: 0px!important;
+} */
+ .section3_right_title{
+    font-size: 18px;
+    line-height: 18px;
+ }
+ .section3_blue_title{
+    font-size: 28px;
+    line-height: 28px;
+ }
+ .section3-text{
+    font-size: 18px;
+    line-height: 18px;
+ }
+ .section_3_right{
+    min-height: 150px;
+    width: 100%;
+    padding-right: 0px;
+ }   
+ .section3_right_title{
+
+ }
+ /* .swiper-button-next-section3{
+    font-size: 20px!important;
+    color: rgb(228, 23, 23);
+ } */
+ /* .swiper-button-prev-section3{
     font-size: 20px!important;
     color: white;
     right: -6px!important;
-    /* height: 108px!important; */
-}
-.swiper-container-rtl .swiper-button-prev {
+ } */
+ /* .swiper-container-rtl .swiper-button-prev {
     right: -6px!important;
     left: auto;
     color: rgb(218, 38, 38);
     font-size: 20px!important;
-}
+ } */
 
-.swiper-button-next-section3::after{
+ /* .swiper-button-next-section3::after{ */
     /* width: 10px;
     height: 10px; */
-    font-size: 20px!important;
-    color: rgb(224, 50, 50);
+    /* font-size: 20px!important; */
+    /* color: rgb(224, 50, 50); */
     /* height: 108px!important; */
-}
-.swiper-button-prev-section2:after{
+ /* } */
+ /* .swiper-button-prev-section2:after{
     font-size: 20px!important;
     color: white;
-    /* height: 108px!important; */
-}
+    height: 108px!important;
+ } */
 
-.swiper-button-next-section3:after,  .swiper-button-prev-section3:after {
+ .swiper-button-next-section3:after,  .swiper-button-prev-section3:after {
     content: 'next';
     font-size: 20px!important;
+ }
+ .sec3swiper .swiper-button-prev-section3:after{
+    left:20px!important;
+ }
+ .sec3swiper{
+    width: 100vw;
 }
      
+}
+
+@media screen and (max-width: 1000px) {
+    .swiper-slide-content{
+        padding-left: 40px;
+        padding-right: 65px;
+    }
+    .section3-swiper-wrapper{
+        padding-right: 0px;
+    }
+    .section3_container {
+        display: grid;
+        margin-top: 0px;
+    }
+    .sec3swiper{
+        width: 100vw;
+    }
+
+    .section_3_right{
+        padding-right: 0px;
+    }
+    .section_3_left{
+        display: grid;
+        justify-content: center;
+    }
+
 }

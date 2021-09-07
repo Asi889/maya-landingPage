@@ -75,7 +75,7 @@ $mainObj = new canaan_post($post);
 
                 foreach ($links as $value) {
                     # code...
-                    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center block px-2 py-2 navlinks"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center  block px-2 py-2 navlinks closeNav-js"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
                 }
                 ?>
             </div>

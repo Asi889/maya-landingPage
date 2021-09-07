@@ -104,6 +104,7 @@
 .section-1{
     padding-top: 70px;
     padding-bottom: 20px;
+    direction: rtl;
 }
 @media screen and (max-width: 700px) {
     .layer1-img{

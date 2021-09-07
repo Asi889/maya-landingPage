@@ -5,6 +5,7 @@
 
 body {
     font-family: almoni;
+    direction: rtl;
 }
 
 
@@ -24,12 +25,7 @@ body {
     border-bottom-right-radius: 18px;
   }
   
-  .overlay-content {
-    padding-top: 50px;
-    display: grid;
-    height: 100%;
-
-  }
+  
   
   /* .overlay a { */
     /* padding: 8px; */
@@ -60,6 +56,8 @@ body {
     top: 15px;
     right: 35px;
     }
+    
   }
+  
 
   

@@ -194,6 +194,21 @@
 .section2-grid-small-screen{
     display: block;
 }
+.ccf{
+    width: 200px;
+    height: 100px;
+}
+
+.section2-swiper .swiper-pagination-bullet {
+    color: #000;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.658);
+}
+
+.section2-swiper .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #fcfcfc;
+}
 
 @media screen and (max-width: 700px) {
     .section2-media-smallball{
@@ -260,6 +275,13 @@
     }
 
     .swiper-button-next-section2:after{
+        /* width: 10px;
+        height: 10px; */
+        font-size: 14px!important;
+        color: white;
+        /* height: 108px!important; */
+    }
+    .swiper-button-prev-section2:after{
         /* width: 10px;
         height: 10px; */
         font-size: 14px!important;

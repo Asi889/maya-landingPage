@@ -10,17 +10,9 @@
     <h1 class="section2-media-title ">למי זה מתאים?</h1>
     <!-- Additional required wrapper -->
 
-    <!-- <?php
-    $lp_firstPageSubtitle = [
-        ['href' => '#', 'text' => ' מה במוצר?'],
-    ];
-    foreach ($lp_firstPageSubtitle as $key => $value) {
-        # code...
-        echo '<h1 class="font-bold px-4 section3_right_title" href="' . $value['href'] . '" >' . $value['text'] . '</h1>';
-    }
-    ?> -->
-    <div class="swiper-button-prev swiper-button-next-section2"></div>
-    <div class="swiper-wrapper section2-swiper-wrapper">
+    
+    <div class="swiper-button-prev swiper-button-prev-section2"></div>
+    <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide  swiper-slide-section2  ">
             <div class="lp-section2-button-swiper">
@@ -67,8 +59,8 @@
         
     </div>
 
+    <div  class="swiper-button-next swiper-button-next-section2"></div>
+    <div class="swiper-pagination"></div>
 
-    <div uniqueNavElements class="swiper-button-next swiper-button-next-section2"></div>
-
-    <!-- If we need navigation buttons -->
+    
 </div>

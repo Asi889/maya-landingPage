@@ -18,7 +18,7 @@ get_header();
 ?>
 <main>
 
-    <div name="section-1" id="section-1" class="section-1 sections nave-link-js">
+    <div name="section-1" id="section-1" class="section-1 overflow-hidden sections nave-link-js">
         <!-- <?php get_header();  ?> -->
         <?php include_once(dirname(__FILE__) . '/landingpage/section1.php'); ?>
 

@@ -30,7 +30,7 @@ export const formfunction = function (form) {
         }).then(function (data) {
             if (data.status==='fail') {
                 
-                 return box.innerHTML = '<h2 class="text-2xl">המייל שהזנת לא תקין בום!</h2>'
+                 return box.innerHTML = '<h2 class="text-2xl">המייל שהזנת לא תקין !</h2>'
             }
             formWrapper.style.display = 'none';
             formMessage.style.display = 'block';

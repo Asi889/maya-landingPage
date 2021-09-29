@@ -118,15 +118,15 @@ $mainObj = new canaan_post($post);
                         <a id="firstlink" class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks zzt scroll-header-links" href="#section-1">ראשי</a>
                         <a class="px-4 topBarFontSize lp_header_middle text-left hd_navlinks" href="#section-2">מה במוצר</a>
                         <a class="px-4 topBarFontSize llz lp_header_middle text-left hd_navlinks" href="#section-3">יצירת קשר</a>
-                        <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                        <!-- <img class="wheelchair-logo" src="<?php echo get_template_directory_uri() . '/static/images/wheelchair.svg'; ?>" alt="<?php echo get_bloginfo('name'); ?>"> -->
                     </div>
 
                     <div class="topbar_left_section my-auto">
                         <?php
-                        
+
                         $header_links = canaan_get_menu_array('primary');
 
-                        // // ];
+                       
                         foreach ($header_links as $key => $value) {
                             # code...
                             echo '<a class="font-bold px-4 landPageTopBarSignUp main_links lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';

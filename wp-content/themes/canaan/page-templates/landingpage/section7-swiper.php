@@ -19,7 +19,9 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
          
                 # code...
                 echo '<div class="swiper-slide ssswiper">';
+                echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center  block px-2 py-2 navlinks closeNav-js"   href="' . $value['href'] . '" > ';
                 echo get_img_html($value['image']);
+                echo '</a>';
                 echo '</div>';
             }
 

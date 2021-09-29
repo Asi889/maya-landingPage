@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="flex-col">
-                    <input type="email" placeholder="מייל" class="lp_sec8_inputs mx-2 my-2" name="form-mail">
+                    <input type="email" placeholder="מייל" class="lp_sec8_inputs mx-2 my-2" name="form-mail" required>
                     <!-- <input type="button" placeholder="שלח" class="lp_sec8_inputs mx-2 my-2" name="form-mail"> -->
                     <button class="lp_sec8_inputs mx-2 my-2">שלח</button>
                 </div>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="section8-form-message bg-mainOrange py-16 text-center">
-            <h1 class="lp-section8-title my-5">ההודעה נשלחה בצלחה!</h1>
+            <h1 class="lp-section8-title my-5">ההודעה נשלחה בהצלחה!</h1>
             <p class="lp_sec8_form-message-text">תודה שפניתם אלינו</p>
 
         </div>

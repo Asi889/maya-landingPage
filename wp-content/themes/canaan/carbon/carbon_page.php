@@ -46,6 +46,8 @@ function crb_attach_page_options()
         Field::make('complex', "{$prefix}section7_logos", 'logos')
             ->add_fields( array(
                 Field::make('image', 'image', 'Add logo'),
+                Field::make('text', 'href', 'לינק  הקישור')
+
             )),
             Field::make('complex', "{$prefix}section3_slider", 'section3_slider_text')
             ->add_fields( array(

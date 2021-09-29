@@ -1,16 +1,16 @@
 {
   "wp-content/themes/canaan/static/js/main.js": {
-    "file": "assets/main.58debb4e.js",
+    "file": "assets/main.ed852169.js",
     "src": "wp-content/themes/canaan/static/js/main.js",
     "isEntry": true,
     "imports": [
-      "_vendor.0764fc43.js"
+      "_vendor.6cf71870.js"
     ],
     "css": [
-      "assets/main.4b0beb43.css"
+      "assets/main.d592f3c1.css"
     ]
   },
-  "_vendor.0764fc43.js": {
-    "file": "assets/vendor.0764fc43.js"
+  "_vendor.6cf71870.js": {
+    "file": "assets/vendor.6cf71870.js"
   }
 }

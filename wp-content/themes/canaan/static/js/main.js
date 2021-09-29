@@ -199,7 +199,7 @@ function changePlacheholder() {
   function togglePlaceholder(e) {
     console.log(e.target.value);
     const input = document.querySelector('.lp_sec8_inputs');
-    input.placeholder = e.target.value =='looking' ? 'שם מלא': ' שם הארגון'
+    input.placeholder = e.target.value =='looking' ? 'שם מלא': 'שם הארגון'
   }
   const radios = document.querySelectorAll('input[type=radio][name="look_for_job_education"]');
   radios.forEach(radio => radio.addEventListener('change', togglePlaceholder));

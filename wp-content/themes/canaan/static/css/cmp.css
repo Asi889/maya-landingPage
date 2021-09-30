@@ -46,9 +46,19 @@ html{
 
 
 
+.pic-2{
+    max-width: 551px;
+}
+.pic-3{
+    right: -364px
+}
 
-
-
+.section_3_right {
+    width: 100%;
+}
+.section3_blue_title{
+    max-width: 927px;
+}
 
 @media screen and (max-width: 1000px) {
     /* .topnav a {
@@ -220,7 +230,15 @@ html{
     .topbar_right_icon{
         grid-column-start: 1;
     }
-    
+    .pic-2{
+        max-width: 183px;
+        top: 4rem;
+    }
+    .pic-3{
+        width: 191px;
+        right: -127px;
+        top: 6rem;
+    }
     
        
 }

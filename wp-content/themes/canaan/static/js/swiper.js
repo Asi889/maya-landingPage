@@ -1,7 +1,6 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination ,Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
-Swiper.use([Navigation, Pagination]);
-
+Swiper.use([Navigation, Pagination, Autoplay]);
 const sec3swiper = new Swiper('.sec3swiper', {
   observer: true,
   observeParents: true,
@@ -10,9 +9,12 @@ const sec3swiper = new Swiper('.sec3swiper', {
   spaceBetween: 30,
   loop: true,
   slidesPerView: 1,
+  autoplay:true,
 
-
-
+  autoplay: {
+    delay: 2500,
+    // disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
   },
@@ -21,6 +23,7 @@ const sec3swiper = new Swiper('.sec3swiper', {
     prevEl: '.swiper-button-prev-section3',
   },
 })
+console.log(sec3swiper);
 
 
 

@@ -22,19 +22,19 @@
                 <div class="lp_section8_left_radio_container">
 
                     <div class="text-mainWhite flex items-center">
-                        <input id="input1" type="radio" checked class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="looking">
+                        <input id="input1" type="radio" checked class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="looking" required>
                         <label for="input1 " class="lp_sec8_text">מחפש עבודה/לימודים</label>
                     </div>
 
                     <div class="text-mainWhite flex items-center">
-                        <input id="input2" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="employer">
+                        <input id="input2" type="radio" class="lp_sec8_checkbox mx-2" name="look_for_job_education" value="employer" required>
                         <label for="input2" class="lp_sec8_text">מעסיק</label>
                     </div>
                 </div>
 
                 <div class="flex-col">
-                    <input id="input4" class="lp_sec8_inputs  mx-2 my-2 " type="text" placeholder="שם מלא" name="full-name">
-                    <input type="tel" placeholder="טלפון" class="lp_sec8_inputs mx-2 my-2" name="form-tel">
+                    <input id="input4" class="lp_sec8_inputs  mx-2 my-2 " type="text" placeholder="שם מלא" name="full-name" required>
+                    <input type="tel" placeholder="טלפון" class="lp_sec8_inputs mx-2 my-2" name="form-tel" required>
                 </div>
 
                 <div class="flex-col">

@@ -12,7 +12,7 @@
 
     <div class="section_3_left">
 
-        <img src="<?php echo get_template_directory_uri() . '../static/images/firstpagepic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        <img src="<?php echo get_template_directory_uri() . '/static/images/sec3pic.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
 
 

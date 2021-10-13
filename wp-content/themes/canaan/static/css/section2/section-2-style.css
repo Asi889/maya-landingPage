@@ -38,11 +38,17 @@
     font-size: 34px;
     letter-spacing: 0;
     line-height: 36px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: space-evenly;
     top: 0;
+}
+.question-mark{
+    position: absolute;
+    left: 25px;
+    top: 25px;
 }
 .lp-section2-button:hover{
     box-sizing: border-box;
@@ -54,9 +60,6 @@
     text-align: center;
     top: -15px;
     transition: all 0.9s ease;
-    /* margin-right: 48px; */
-    /* margin-top: -20px; */
-    /* margin-bottom: 36px; */
     font-size: 34px;
     font-weight: bold;
     letter-spacing: 0;
@@ -66,6 +69,7 @@
     background-color: #FFFFFF;
     box-shadow: 0 38px 124px 0 #28747A;
 }
+
 
 .section2_body{
     position: relative;
@@ -80,12 +84,40 @@
     padding-bottom: 177px;
     padding-top: 41px;
 }
+.tooltip-wrapper{
+    display: none;
+    background-color: #3C91A0;
+    border: 1px solid white ;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+.green-question:hover + .tooltip-wrapper{
+    display: block;
+    position: absolute;
+}
+.white-question:hover + .tooltip-wrapper{
+    display: block;
+    position: absolute;
+}
 
 .lp_sec2_img{
     width: 100px;
     height: 100px;
     margin: 10px 0 10px 0;
 }
+.green-question{
+    display: none;
+}
+.lp-section2-button:hover .green-question{
+    display: block;
+}
+.lp-section2-button:hover .white-question{
+    display: none;
+}
+
 .green-eye{
     display: none;
 }

@@ -61,18 +61,31 @@
 
     </div>
 
-    <div class="lp_section1_left">
+    <div class="lp_section1_left ">
 
+        <!-- <div>
 
-        <img class=""  src="<?php echo get_template_directory_uri() . '/static/images/pic1.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        </div>
+        <img class="" src="<?php echo get_template_directory_uri() . '/static/images/pic1.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
-        <img class="absolute top-24 -right-2 pic-2"  src="<?php echo get_template_directory_uri() . '/static/images/pic2.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        <img class="absolute top-24 -right-2 pic-2" src="<?php echo get_template_directory_uri() . '/static/images/pic2.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
 
-        <img class="absolute top-44 pic-3"  src="<?php echo get_template_directory_uri() . '/static/images/pic3.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+        <img class="absolute top-44 pic-3" src="<?php echo get_template_directory_uri() . '/static/images/pic3.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>"> -->
         <!-- <div class="" >
                 </div>
                 <div class= >
                 </div> -->
+        <div class="parallax">
+            <div class="parallax-layer parallax-layer__1" data-parallax-disallow="y" data-parallax-deep="1000">
+                <img class="pic11" src="<?php echo get_template_directory_uri() . '/static/images/pic1.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+            </div>
+            <div class="parallax-layer parallax-layer__2" data-parallax-deep="40">
+                <img class="absolute top-40 right-28 pic-2" src="<?php echo get_template_directory_uri() . '/static/images/pic2.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+            </div>
+            <div class="parallax-layer parallax-layer__3" data-parallax-deep="100">
+                <img class="absolute pic-3" src="<?php echo get_template_directory_uri() . '/static/images/pic3.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+            </div>
+        </div>
 
     </div>
 

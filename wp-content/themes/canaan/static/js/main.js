@@ -49,7 +49,6 @@ window.addEventListener('load', function () {
         }
 
         function closeNav() {
-          console.log("shoes");
             document.getElementById("myNav").style.width = "0%";
             document.querySelector(".close-slide-btn").style.display = "none";
             document.querySelector(".sitcky-footer").style.filter = "none";
@@ -57,7 +56,8 @@ window.addEventListener('load', function () {
         }
         document.querySelector(".toglle-nav-js").addEventListener('click',navbarfunction)
         document.querySelector(".closeNav-js").addEventListener('click',closeNav)
-
+        const links = document.querySelectorAll('.overlay-content-js a');
+        links.forEach(link => link.addEventListener('click',closeNav ))
 });
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -106,90 +106,11 @@ window.addEventListener('load', function() {
 });
 
 
-var isInViewport = function (elem) {
-
-  var bounding = elem.getBoundingClientRect();
-  return (
-      bounding.top >= 0 &&
-      bounding.left >= 0 &&
-      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
-
-const spyScrolling = ( ) => {
-  const sections = document.querySelectorAll( '.navlinks' );
-  
-  window.onscroll = ( ) => {
-    const scrollPos = document.body.scrollTop;
-    // if(scrollPos >= 580){
-    //   console.log("at section 2");
-    // }
-    // console.log(scrollPos);
-    sections.forEach(section =>{
-
-      if ( isInViewport(section) ) {
-        console.log("gigi");
-        
-        const id = section.id;
-        if(id){
-          document.querySelector( `a[href*=${ id }` ).classList.add( 'active' );
-
-        }
-          // document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );
-          // document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
-        }
-    })
-
-  //   for ( let s in sections )
-  //   if (sections[s] && isInViewport(sections[s]) ) {
-  //     // const id = sections[s].id;
-  //     //   document.querySelector( '.hd_navlinks' ).classList.remove( 'active' );
-  //     //   document.querySelector( `a[href*=${ id }]` )?.parentNode.classList.add( 'active' );
-  //     //   document.getElementById( 'firstlink' ).classList.remove( 'scroll-header-links' );
-  //     }
-  } 
-}
-
-// spyScrolling( );
-
-//////////////////////////////////////////////////////////////////////////////////////
 
 
 
-const spyScrolling1 = ( ) => {
-  const sections = document.querySelectorAll( '.sections' );
 
-  window.onscroll = ( ) => {
-    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
-    for ( let s in sections )
-      if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
-        const id = sections[ s ].id;
-        console.log(id);
-        document.querySelector( '.scroll-header-links' ).remove( 'scroll-header-links' );
-        document.querySelector( `a[href*=${ id }]` ).add( 'scroll-header-links' );
-      }
-  }  
-}
-// spyScrolling1();
-
-///////////////////////////////////////
-
-// window.onscroll = (()=> {
-//   let mainSection = document.querySelectorAll('.sections');
-//   console.log(mainSection);
-
-//   mainSection.forEach((v,i)=> {
-//     let rect = v.getBoundingClientRect().y
-//     if(rect < window.innerHeight-200){
-//       menuSection.forEach(v=> v.classList.remove('scroll-header-links'))
-//       menuSection[i].classList.add('scroll-header-links')
-//     }else{
-//       console.log("buho");
-//     }
-//   })
-// })
 
 
 

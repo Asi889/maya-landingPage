@@ -54,7 +54,9 @@ function crb_attach_page_options()
                 Field::make('text', 'title', 'Insert Title'),
                 Field::make('text', 'text', 'Insert Text'),
             )),
-            Field::make('text',"{$prefix}youtubelink",'לינק לסרטון')
+            Field::make('text',"{$prefix}youtubelink",'לינק לסרטון'),
+            Field::make('rich_text',"{$prefix}reskill-tooltip",'Reskiling tool tip text'),
+            Field::make('rich_text',"{$prefix}upskill-tooltip",'Upskiling tool tip text')
         ));
         // Field::make('complex', "{$prefix}section2_images", 'אייקונים קטנים')
         //     ->add_fields(array(

@@ -67,15 +67,15 @@ $mainObj = new canaan_post($post);
 <body <?php body_class(); ?>>
     <div id="myNav" class="overlay">
         <button class="closebtn close-slide-btn closeNav-js" id="close-slide-btn">&times;</button>
-        <div class="overlay-content pt-14">
+        <div class="overlay-content pt-14 overlay-content-js">
             <div class="slidepop-navlinks text-center">
                 <?php
 
                 $links = carbon_get_the_post_meta('page-homenavlinks');
 
                 foreach ($links as $value) {
-                    # code...
-                    echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center  block px-2 py-2 navlinks closeNav-js"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
+                    
+                    echo '<a id="close-slide-btn" class="topBarFontSize-slidepop-top lp_header_middle text-center block px-2 py-2 navlinks closeNav-js"   href="#' . $value['href'] . '" >' . $value['title'] . '</a>';
                 }
                 ?>
             </div>
@@ -126,7 +126,7 @@ $mainObj = new canaan_post($post);
 
                         $header_links = canaan_get_menu_array('primary');
 
-                       
+
                         foreach ($header_links as $key => $value) {
                             # code...
                             echo '<a class="font-bold px-4 landPageTopBarSignUp main_links lp_header_leftsec" href="' . $value['url'] . '" >' . $value['title'] . '</a>';

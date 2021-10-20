@@ -19,7 +19,7 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
          
                 # code...
                 echo '<div class="swiper-slide ssswiper">';
-                echo '<a class=" topBarFontSize-slidepop-top lp_header_middle text-center  block px-2 py-2 navlinks closeNav-js"   href="' . $value['href'] . '" > ';
+                echo '<a target="_blank" rel="noopener noreferrer" class=" topBarFontSize-slidepop-top lp_header_middle text-center  block px-2 py-2 navlinks closeNav-js"   href="' . $value['href'] . '" > ';
                 echo get_img_html($value['image']);
                 echo '</a>';
                 echo '</div>';
@@ -27,28 +27,7 @@ $first_slide_title =  ['href' => '#', 'text' => 'אבחון תעסוקתי מק�
 
 
         ?>
-        <!-- Slides -->
-        <!-- <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/thor.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo" src="<?php echo get_template_directory_uri() . '/static/images/wolvereen.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/wonderwomen.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/superman.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/hulk.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/spider-man.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div>
-        <div class="swiper-slide">
-            <img class="logoo " src="<?php echo get_template_directory_uri() . '/static/images/ironman.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
-        </div> -->
+       
 
     </div>
 

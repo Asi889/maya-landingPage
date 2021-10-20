@@ -83,7 +83,7 @@
                 <img class="absolute top-40 right-28 pic-2" src="<?php echo get_template_directory_uri() . '/static/images/pic2.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
             </div>
             <div class="parallax-layer parallax-layer__3" data-parallax-deep="100">
-                <img class="absolute pic-3" src="<?php echo get_template_directory_uri() . '/static/images/pic3.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
+                <img class="pic-3" src="<?php echo get_template_directory_uri() . '/static/images/pic3.png'; ?>" alt="<?php echo get_bloginfo('name'); ?>">
             </div>
         </div>
 

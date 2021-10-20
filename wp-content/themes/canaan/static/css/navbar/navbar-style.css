@@ -44,6 +44,7 @@
     width: 139px;
     font-size: 25px;
     color: #999999;
+    border: 1px solid transparent;
 }
 .landPageTopBarSignUp-slidepop{
     height: 42px;
@@ -68,6 +69,15 @@
     padding-bottom: 5px;
     
 
+}
+.topbar_left_section :first-child{
+    font-size: 25px;
+    border-radius: 6px;
+    border: 1px solid #313131;
+    /* color: #313131; */
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-left: 5px;
 }
 
 .topBarFontSize{

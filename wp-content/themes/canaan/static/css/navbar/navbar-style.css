@@ -61,7 +61,7 @@
 }
 
 .landPageTopBarSignUp:hover{
-    font-size: 25px;
+    /* font-size: 25px; */
     border-radius: 6px;
     border: 1px solid #313131;
     color: #313131;
@@ -71,7 +71,7 @@
 
 }
 .topbar_left_section :first-child{
-    font-size: 25px;
+    /* font-size: 25px; */
     border-radius: 6px;
     border: 1px solid #313131;
     /* color: #313131; */
@@ -138,6 +138,15 @@
     }
     .topnav .icon {
         display: block;
+    }
+    .topbar_left_section :first-child  {
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid #313131;
+        /* color: #313131; */
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        margin-left: 5px;
     }
 }
 

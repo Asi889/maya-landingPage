@@ -207,6 +207,8 @@ html{
         grid-column-start: 5;
     }
     
+    
+    
 }
   
 @media screen and (max-width: 1000px) {
@@ -242,6 +244,8 @@ html{
         right: -95px;
         top: 5rem;
     }
+
+    
     
        
 }
